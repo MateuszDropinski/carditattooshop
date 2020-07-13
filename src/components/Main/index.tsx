@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Welcome from './Welcome';
+import About from './About';
 
 const Main = () => (
     <Wrapper>
         <Welcome />
+        <About />
     </Wrapper>
 );
 

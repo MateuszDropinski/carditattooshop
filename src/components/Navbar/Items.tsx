@@ -1,8 +1,8 @@
 import React from 'react';
 import { Facebook, Instagram } from 'react-feather';
+import styled from 'styled-components';
 
 import { StyledAnchor } from '../styledComponents';
-import styled from 'styled-components';
 
 const Items = () => (
     <ul>

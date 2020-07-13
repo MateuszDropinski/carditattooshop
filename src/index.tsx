@@ -9,12 +9,15 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
     body {
-        font-family: Nunito, Arial, sans-serif;
+        font-family: Lato, Arial, sans-serif;
         margin: 0;
     }
     ul, li {
         list-style: none;
         padding: 0;
+        margin: 0;
+    }
+    p {
         margin: 0;
     }
 `;

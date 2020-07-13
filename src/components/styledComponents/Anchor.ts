@@ -6,7 +6,7 @@ const StyledAnchor = styled.a`
     transition: ${({ theme }) => theme.transition};
     cursor: pointer;
     font-size: 24px;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     

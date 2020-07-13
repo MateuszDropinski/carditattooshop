@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { ArrowDown } from 'react-feather';
 
-import { StyledAnchorButton } from '../styledComponents';
+import { StyledAnchorButton, Logo } from '../styledComponents';
 import { StaticNavbar } from '../Navbar';
 
 const Welcome = () => (
@@ -35,14 +35,7 @@ const Wrapper = styled.section`
     position: relative;
     min-height: 650px;
     padding-top: 50px;
-`;
-
-const Logo = styled.img`
-    position: absolute;
-    top: 30px;
-    left: 50px;
-    width: 100px;
-    height: auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 `;
 
 const Header = styled.h1`
@@ -58,6 +51,7 @@ const Header = styled.h1`
     border-radius: 5px;
     white-space: nowrap;
     letter-spacing: 3px;
+    text-shadow: 1px 1px 2px ${({ theme }) => theme.black};
 `;
 
 const ButtonsContainer = styled.div`
