@@ -3,11 +3,13 @@ import styled from 'styled-components';
 
 import Welcome from './Welcome';
 import About from './About';
+import Team from './Team';
 
 const Main = () => (
     <Wrapper>
         <Welcome />
         <About />
+        <Team />
     </Wrapper>
 );
 
