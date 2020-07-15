@@ -52,7 +52,7 @@ const Info = styled.p`
 
 const Wrapper = styled.figure`
     width: 20%;
-    margin: 30px 2.5% 0;
+    margin: 0 2.5%;
     position: relative;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     cursor: pointer;

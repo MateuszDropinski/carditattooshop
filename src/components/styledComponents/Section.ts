@@ -10,4 +10,6 @@ const StyledSection = styled.section`
     height: 100%;
 `;
 
+// Margin bottom set in Faq for Parallax
+
 export default StyledSection;

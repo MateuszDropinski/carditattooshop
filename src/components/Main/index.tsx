@@ -6,6 +6,7 @@ import About from './About';
 import Team from './Team';
 import Faq from './Faq';
 import Laser from './Laser';
+import Blog from './Blog';
 
 const Main = () => (
     <Wrapper>
@@ -14,6 +15,7 @@ const Main = () => (
         <Team />
         <Faq />
         <Laser />
+        <Blog />
     </Wrapper>
 );
 

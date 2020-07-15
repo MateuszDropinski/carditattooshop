@@ -13,6 +13,7 @@ const StyledAnchorButton = styled.a`
     font-weight: 600;
     background-color: ${({ theme }) => theme.mainColor};
     text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     
     &:hover {
         background-color: transparent;

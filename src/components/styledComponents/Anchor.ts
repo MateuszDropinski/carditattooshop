@@ -5,7 +5,7 @@ const StyledAnchor = styled.a`
     color: ${({ theme }) => theme.white};
     transition: ${({ theme }) => theme.transition};
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     display: inline-block;
     justify-content: center;
     align-items: center;
