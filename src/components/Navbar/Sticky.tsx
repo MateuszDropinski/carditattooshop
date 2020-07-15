@@ -23,10 +23,10 @@ const StickyNavbar = () => {
     };
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScrollEvent);
+        document.addEventListener('scroll', handleScrollEvent);
 
         return () => {
-            window.removeEventListener('scroll', handleScrollEvent);
+            document.removeEventListener('scroll', handleScrollEvent);
         };
     });
 

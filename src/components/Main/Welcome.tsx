@@ -36,6 +36,7 @@ const Wrapper = styled.section`
     min-height: 650px;
     padding-top: 50px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-bottom: 100px;
 `;
 
 const Header = styled.h1`

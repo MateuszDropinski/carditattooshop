@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9cba7ce8-15c8-49f7-bd6c-81c54dc3f92b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Welcome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Welcome.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Static.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Static.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Sticky.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Sticky.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styledComponents/AnchorButton.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styledComponents/AnchorButton.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/styledComponents/Section.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styledComponents/Section.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/styledComponents/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styledComponents/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,9 @@
       <workItem from="1594238791417" duration="415000" />
       <workItem from="1594297593668" duration="10567000" />
       <workItem from="1594662565956" duration="5860000" />
-      <workItem from="1594750269146" duration="3584000" />
+      <workItem from="1594750269146" duration="3784000" />
+      <workItem from="1594821991216" duration="3981000" />
+      <workItem from="1594826234518" duration="348000" />
     </task>
     <servers />
   </component>
@@ -101,33 +103,33 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594667931439" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1594668433139">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1594754056418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594668433139" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1594668433139">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594754056418" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1594754056418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594668433139" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1594668433139">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594754056418" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1594754056418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594668433139" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1594668433139">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594754056418" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1594754056418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594668433139" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594754056418" />
     <state x="277" y="57" width="1130" height="709" key="SettingsEditor" timestamp="1594305436352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" width="1130" height="709" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594305436352" />
-    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1594751386769">
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1594826040310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1594751386769" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594753294871">
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1594826040310" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594826374865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594753294871" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594826374865" />
   </component>
 </project>

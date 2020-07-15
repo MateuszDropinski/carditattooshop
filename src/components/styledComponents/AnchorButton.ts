@@ -7,7 +7,7 @@ const StyledAnchorButton = styled.a`
     padding: 15px 25px;
     transition: ${({ theme }) => theme.transition};
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     white-space: nowrap;
     border-radius: 5px;
     font-weight: 600;
