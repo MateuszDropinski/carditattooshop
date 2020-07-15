@@ -5,6 +5,7 @@ import Welcome from './Welcome';
 import About from './About';
 import Team from './Team';
 import Faq from './Faq';
+import Laser from './Laser';
 
 const Main = () => (
     <Wrapper>
@@ -12,6 +13,7 @@ const Main = () => (
         <About />
         <Team />
         <Faq />
+        <Laser />
     </Wrapper>
 );
 
