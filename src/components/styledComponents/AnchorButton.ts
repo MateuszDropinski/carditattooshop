@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const StyledAnchorButton = styled.a`
+export const anchorButtonStyles = css`
     text-decoration: none;
     border: 2px solid ${({ theme }) => theme.mainColor};
     color: ${({ theme }) => theme.black};
@@ -19,6 +19,10 @@ const StyledAnchorButton = styled.a`
         background-color: transparent;
         color: ${({ theme }) => theme.mainColor};
     }
+`;
+
+const StyledAnchorButton = styled.a`
+    ${anchorButtonStyles}
 `;
 
 export default StyledAnchorButton;

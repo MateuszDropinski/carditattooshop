@@ -14,20 +14,23 @@ const Faq = () => {
     const [question, setQuestion] = useState<QuestionType>(QUESTIONS[0]);
 
     const handleParallaxScroll = () => {
-        const scrollMax = document.body.scrollHeight - window.innerHeight;
-        const percentage = (window.scrollY / scrollMax) * 100;
-
         if (parallax.current) {
-            parallax.current.style.backgroundPositionY = `${percentage}%`;
+            const parallaxTop = parallax.current.offsetTop;
+            const parallaxBottom = parallax.current.offsetHeight + parallaxTop;
+            const percentage = ((window.scrollY - parallaxTop + window.innerHeight)
+                / (parallaxBottom - (parallaxTop - window.innerHeight))) * 100;
+            parallax.current.style.backgroundPositionY = `${Math.min(Math.max(percentage, 0), 100)}%`;
         }
     };
 
     useEffect(() => {
         document.addEventListener('scroll', handleParallaxScroll);
+        document.addEventListener('resize', handleParallaxScroll);
         setQuestion(QUESTIONS[Math.floor(Math.random() * QUESTIONS.length)]);
 
         return () => {
             document.removeEventListener('scroll', handleParallaxScroll);
+            document.removeEventListener('resize', handleParallaxScroll);
         };
     }, []);
 
@@ -48,7 +51,7 @@ const Parallax = styled.div`
     width: 100%;
     position: relative;
     height: 400px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     background-size: 100%;
     background-image: url("/assets/background_2.jpg");
 `;
