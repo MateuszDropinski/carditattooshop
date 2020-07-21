@@ -8,6 +8,7 @@ import Faq from './Faq';
 import Laser from './Laser';
 import Blog from './Blog';
 import Form from './Form';
+import Map from './Map';
 
 const Main = () => (
     <Wrapper>
@@ -18,6 +19,7 @@ const Main = () => (
         <Laser />
         <Blog />
         <Form />
+        <Map />
     </Wrapper>
 );
 

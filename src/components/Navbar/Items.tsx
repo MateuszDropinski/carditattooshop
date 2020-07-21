@@ -38,6 +38,11 @@ const Items = () => (
         </ListItem>
         <ListItem>
             <StyledAnchor>
+                Regulamin
+            </StyledAnchor>
+        </ListItem>
+        <ListItem>
+            <StyledAnchor>
                 <Facebook size={26} />
             </StyledAnchor>
         </ListItem>

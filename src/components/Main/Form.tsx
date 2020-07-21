@@ -33,7 +33,7 @@ const Form = () => {
                 { errors.message && <Error>Potrzebujemy abyś podał nam więcej informacji!</Error>}
                 <Input placeholder="Telefon...*" type="tel" name="phone" ref={register({ required: true })} />
                 { errors.phone && <Error>Potrzebujemy abyś podał nam swój telefon!</Error>}
-                <SubmitInput value="Wyślij" type="submit" />
+                <SubmitInput value="Wyślij!" type="submit" />
             </FormContainer>
         </Section>
     );
@@ -68,6 +68,7 @@ const Input = styled.input`
 const SubmitInput = styled(Input)`
     ${anchorButtonStyles};
     outline: none;
+    align-self: center;
 `;
 
 const Textarea = styled.textarea`
