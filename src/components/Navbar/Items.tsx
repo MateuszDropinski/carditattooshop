@@ -2,54 +2,55 @@ import React from 'react';
 import { Facebook, Instagram } from 'react-feather';
 import styled from 'styled-components';
 
-import { StyledAnchor } from '../styledComponents';
+import { StyledAnchor, StyledLink, StyledExternalAnchor } from '../styledComponents';
+import { scrollWithOffset } from '../../utils/scroll';
 
 const Items = () => (
     <ul>
         <ListItem>
-            <StyledAnchor>
+            <StyledAnchor to='/o-nas'>
                 O nas
             </StyledAnchor>
         </ListItem>
         <ListItem>
-            <StyledAnchor>
+            <StyledLink scroll={scrollWithOffset} to='#zespol'>
                 Zespół
-            </StyledAnchor>
+            </StyledLink>
         </ListItem>
         <ListItem>
-            <StyledAnchor>
+            <StyledAnchor to='/laser'>
                 Laser
             </StyledAnchor>
         </ListItem>
         <ListItem>
-            <StyledAnchor>
+            <StyledAnchor to='/blog'>
                 Blog
             </StyledAnchor>
         </ListItem>
         <ListItem>
-            <StyledAnchor>
+            <StyledAnchor to='/faq'>
                 FAQ
             </StyledAnchor>
         </ListItem>
         <ListItem>
-            <StyledAnchor>
+            <StyledLink scroll={scrollWithOffset} to='/#kontakt'>
                 Kontakt
-            </StyledAnchor>
+            </StyledLink>
         </ListItem>
         <ListItem>
-            <StyledAnchor>
+            <StyledAnchor to='/regulamin'>
                 Regulamin
             </StyledAnchor>
         </ListItem>
         <ListItem>
-            <StyledAnchor>
+            <StyledExternalAnchor target='_blank' href='https://www.facebook.com/CardiTattooShop'>
                 <Facebook size={26} />
-            </StyledAnchor>
+            </StyledExternalAnchor>
         </ListItem>
         <ListItem>
-            <StyledAnchor>
+            <StyledExternalAnchor target='_blank' href='https://www.instagram.com/carditattooshop/'>
                 <Instagram size={26} />
-            </StyledAnchor>
+            </StyledExternalAnchor>
         </ListItem>
     </ul>
 );

@@ -5,6 +5,7 @@ import { LASER } from '../../content/laser';
 
 const Laser = () => (
     <ImageTextSection
+        link='/laser'
         id='laser'
         img={LASER.img}
         imgAlt={LASER.imgAlt}

@@ -9,16 +9,17 @@ type Props = {
     imgAlt: string,
     header: string,
     text: string,
+    link: string,
     reverse: boolean
 }
 
-const ImageTextSection: React.FC<Props> = ({ id, img, imgAlt, header, text, reverse }) => (
+const ImageTextSection: React.FC<Props> = ({ id, img, imgAlt, header, text, reverse, link }) => (
     <Section id={id} style={{ flexDirection: reverse ? 'row-reverse' : 'row' }}>
         <Image src={img} alt={imgAlt} />
         <TextContainer>
             <SectionHeader>{header}</SectionHeader>
             <Text>{text}</Text>
-            <Link>Dowiedz się więcej!</Link>
+            <Link to={link}>Dowiedz się więcej!</Link>
         </TextContainer>
     </Section>
 );

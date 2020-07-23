@@ -12,10 +12,10 @@ const Footer = () => (
         <Info>Adres: <br /> {ADDRESS[0]} <br /> {ADDRESS[1]}</Info>
         <Info>Kontakt: <br /> tel: +48 796 787 653 <br /> email: carditattooshop@gmail.com</Info>
         <SocialContainer>
-            <StyledExternalAnchor href='https://www.facebook.com/CardiTattooShop'>
+            <StyledExternalAnchor target='_blank' href='https://www.facebook.com/CardiTattooShop'>
                 <Facebook />
             </StyledExternalAnchor>
-            <StyledExternalAnchor href='https://www.instagram.com/carditattooshop'>
+            <StyledExternalAnchor target='_blank' href='https://www.instagram.com/carditattooshop'>
                 <Instagram />
             </StyledExternalAnchor>
         </SocialContainer>

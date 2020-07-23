@@ -20,7 +20,7 @@ const Form = () => {
     };
 
     return (
-        <Section>
+        <Section id='kontakt'>
             <SectionHeader>
                 Zapisz się na termin już dziś!
             </SectionHeader>

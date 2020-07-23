@@ -5,6 +5,7 @@ import ImageTextSection from './ImageTextSection';
 
 const About = () => (
     <ImageTextSection
+        link='/o-nas'
         id='o-nas'
         img={ABOUT.img}
         imgAlt={ABOUT.imgAlt}

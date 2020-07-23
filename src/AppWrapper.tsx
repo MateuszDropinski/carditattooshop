@@ -14,7 +14,7 @@ const AppWrapper = () => (
             <Wrapper>
                 <StickyNavbar />
                 <Switch>
-                    <Route path="/about">
+                    <Route path="/o-nas">
                         <About />
                     </Route>
                     <Route path="/">

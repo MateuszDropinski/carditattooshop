@@ -2,8 +2,9 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { ArrowDown } from 'react-feather';
 
-import { StyledAnchorButton, Logo } from '../styledComponents';
+import { Logo, StyledLinkButton } from '../styledComponents';
 import { StaticNavbar } from '../Navbar';
+import { scrollWithOffset } from '../../utils/scroll';
 
 const Welcome = () => (
     <Wrapper>
@@ -11,11 +12,11 @@ const Welcome = () => (
         <StaticNavbar />
         <Header>Cardi Tattoo Shop</Header>
         <ButtonsContainer>
-            <Button>
+            <Button scroll={scrollWithOffset} to='#o-nas'>
                 Poznaj nas
             </Button>
             <span>lub</span>
-            <Button>
+            <Button scroll={scrollWithOffset} to='#kontakt'>
                 Zapisz się
             </Button>
         </ButtonsContainer>
@@ -93,7 +94,7 @@ const ArrowDownContainer = styled.div`
     }
 `;
 
-const Button = styled(StyledAnchorButton)`
+const Button = styled(StyledLinkButton)`
     width: 172px;
 `;
 

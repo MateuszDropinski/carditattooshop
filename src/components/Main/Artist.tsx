@@ -20,7 +20,7 @@ const Artist: React.FC<Artist> = ({ name, alias, img, infoShortcut }) => (
         <Info>
             <Alias>{alias}</Alias>
             {infoShortcut}
-            <Anchor>Zobacz moje prace!</Anchor>
+            <Anchor to='/artist'>Zobacz moje prace!</Anchor>
         </Info>
     </Wrapper>
 );

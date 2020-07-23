@@ -18,7 +18,7 @@ const Post: React.FC<PostType> = ({ title, textShortcut, date, img, imgAlt }) =>
             <Header>{title}</Header>
             <Text>{textShortcut}</Text>
             <Date>{date}</Date>
-            <Anchor to='#zespol'>Czytaj dalej!</Anchor>
+            <Anchor to='/blog'>Czytaj dalej!</Anchor>
         </Caption>
     </Wrapper>
 );
