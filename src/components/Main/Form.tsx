@@ -48,7 +48,7 @@ const Section = styled(StyledSection)`
 const FormContainer = styled.form`
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 600px;
     margin-top: 20px;
 `;
 

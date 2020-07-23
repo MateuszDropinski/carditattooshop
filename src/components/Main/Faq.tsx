@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 
-import { StyledSection, StyledAnchorButton } from '../styledComponents';
+import { StyledSection, StyledLinkButton } from '../styledComponents';
 import { QUESTIONS } from '../../content/faq';
 
 type QuestionType = {
@@ -41,7 +41,7 @@ const Faq = () => {
                     <Question>{question.question}</Question>
                     <Answer>{question.answer}</Answer>
                 </QuestionContainer>
-                <StyledAnchorButton>Zobacz inne często zadawane pytania!</StyledAnchorButton>
+                <StyledLinkButton to='/faq'>Zobacz inne często zadawane pytania!</StyledLinkButton>
             </Section>
         </Parallax>
     );

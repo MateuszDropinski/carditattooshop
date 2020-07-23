@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Facebook, Instagram } from 'react-feather';
 
 import { ADDRESS } from '../../content/address';
-import { Logo, StyledAnchor } from '../styledComponents';
+import { Logo, StyledExternalAnchor } from '../styledComponents';
 
 const Footer = () => (
     <FooterContainer>
@@ -12,12 +12,12 @@ const Footer = () => (
         <Info>Adres: <br /> {ADDRESS[0]} <br /> {ADDRESS[1]}</Info>
         <Info>Kontakt: <br /> tel: +48 796 787 653 <br /> email: carditattooshop@gmail.com</Info>
         <SocialContainer>
-            <StyledAnchor>
+            <StyledExternalAnchor href='https://www.facebook.com/CardiTattooShop'>
                 <Facebook />
-            </StyledAnchor>
-            <StyledAnchor>
+            </StyledExternalAnchor>
+            <StyledExternalAnchor href='https://www.instagram.com/carditattooshop'>
                 <Instagram />
-            </StyledAnchor>
+            </StyledExternalAnchor>
         </SocialContainer>
     </FooterContainer>
 );

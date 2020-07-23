@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export const anchorButtonStyles = css`
     text-decoration: none;
@@ -21,7 +22,7 @@ export const anchorButtonStyles = css`
     }
 `;
 
-const StyledAnchorButton = styled.a`
+const StyledAnchorButton = styled(Link)`
     ${anchorButtonStyles}
 `;
 

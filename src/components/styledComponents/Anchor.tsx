@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { HashLink as Link } from 'react-router-hash-link';
 
-const StyledAnchor = styled.a`
+export const anchorStyles = css`
     text-decoration: none;
     color: ${({ theme }) => theme.white};
     transition: ${({ theme }) => theme.transition};
@@ -13,6 +14,10 @@ const StyledAnchor = styled.a`
     &:hover {
         color: ${({ theme }) => theme.mainColor};    
     }
+`;
+
+const StyledAnchor = styled(Link)`
+    ${anchorStyles}
 `;
 
 export default StyledAnchor;

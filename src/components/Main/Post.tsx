@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { StyledAnchor } from '../styledComponents';
+import { StyledLink } from '../styledComponents';
 
 type PostType = {
     title: string,
@@ -18,7 +18,7 @@ const Post: React.FC<PostType> = ({ title, textShortcut, date, img, imgAlt }) =>
             <Header>{title}</Header>
             <Text>{textShortcut}</Text>
             <Date>{date}</Date>
-            <Anchor>Czytaj dalej!</Anchor>
+            <Anchor to='#zespol'>Czytaj dalej!</Anchor>
         </Caption>
     </Wrapper>
 );
@@ -69,7 +69,7 @@ const Date = styled.p`
     font-size: 14px;
 `;
 
-const Anchor = styled(StyledAnchor)`
+const Anchor = styled(StyledLink)`
     color: ${({ theme }) => theme.black};
     align-self: flex-end;
     

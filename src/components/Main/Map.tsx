@@ -18,6 +18,8 @@ const Map = () => {
 
     const onClick = () => setIsOpen(!isOpen);
 
+    // TODO: Remove 'REMOVE' from key
+
     return (
         <LoadScript googleMapsApiKey="AIzaSyAbo63hPprI88UFlecWmYk6OVWeBi3jTFYREMOVE">
             <GoogleMap
@@ -30,7 +32,7 @@ const Map = () => {
                     {
                         isOpen && (
                             <InfoWindow onCloseClick={() => setIsOpen(false)}>
-                                <span>{ADDRESS[0]} <br/> {ADDRESS[1]}</span>
+                                <span>{ADDRESS[0]} <br /> {ADDRESS[1]}</span>
                             </InfoWindow>
                         )
                     }

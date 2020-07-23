@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { StyledSection, SectionHeader, StyledAnchorButton } from '../styledComponents';
+import { StyledSection, SectionHeader, StyledLinkButton } from '../styledComponents';
 import Post from './Post';
 import { BLOG } from '../../content/blog';
 
@@ -14,9 +14,9 @@ const Blog = () => (
             <Post {...BLOG[0]} />
             <Post {...BLOG[1]} />
         </Posts>
-        <StyledAnchorButton>
+        <StyledLinkButton to='/blog'>
             Zobacz wszystkie posty!
-        </StyledAnchorButton>
+        </StyledLinkButton>
     </StyledSection>
 );
 

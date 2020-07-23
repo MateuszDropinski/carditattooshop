@@ -50,10 +50,10 @@ const Navbar = styled.nav`
     background-color: ${({ theme }) => theme.white};
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: ${({ theme }) => theme.transition};
-    transform: translateY(-100%);
+    transform: translateY(-120%);
     
     ul {
-        width: 600px;
+        width: 650px;
         display: flex;
         justify-content: space-between;
         
