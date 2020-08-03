@@ -10,18 +10,16 @@ const SidePageNavbar = () => {
     const { pathname } = useLocation();
     const activeRoute = pathname.split('/')[1];
 
-    if (!activeRoute) {
-        return null;
-    }
-
-    return (
-        <Navbar>
-            <LogoContainer to='/'>
-                <Logo src='/assets/logo_1.png' alt='Cardi tattoo' />
-            </LogoContainer>
-            <Items activeTab={activeRoute} />
-        </Navbar>
-    );
+    return !activeRoute
+        ? null
+        : (
+            <Navbar>
+                <LogoContainer to='/'>
+                    <Logo src='/assets/logo_1.png' alt='Cardi tattoo' />
+                </LogoContainer>
+                <Items activeTab={activeRoute} />
+            </Navbar>
+        );
 };
 
 const Navbar = styled.nav`
@@ -30,13 +28,18 @@ const Navbar = styled.nav`
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    height: ${({ theme }) => theme.sidePageNavbarHeight}px;
     position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     
     ul {
         width: 700px;
         display: flex;
         justify-content: space-between;
+        
+        li {
+            align-items: center;
+        }
                
         li.active-tab {
             a {

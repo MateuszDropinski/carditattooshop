@@ -4,5 +4,7 @@ export const theme = {
     black: '#0a0114',
     text: '#555555',
 
-    transition: '.25s'
+    transition: '.25s',
+
+    sidePageNavbarHeight: 70
 };

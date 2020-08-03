@@ -4,13 +4,12 @@
     <list default="true" id="9cba7ce8-15c8-49f7-bd6c-81c54dc3f92b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Welcome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Welcome.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Items.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Items.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/SidePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/SidePage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/Sticky.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Sticky.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/styledComponents/Logo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styledComponents/Logo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/styledComponents/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styledComponents/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/about.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/about.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,7 @@
       <workItem from="1595516356521" duration="1878000" />
       <workItem from="1595518257731" duration="1186000" />
       <workItem from="1595519593849" duration="593000" />
-      <workItem from="1596466901548" duration="2918000" />
+      <workItem from="1596466901548" duration="7230000" />
     </task>
     <servers />
   </component>
@@ -148,17 +147,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1595519629895" />
-    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1596467819372">
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1596473970800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1596467819372" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1595515731299">
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1596473970800" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1596471132813">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1595515731299" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596468310134">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1596471132813" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596473972337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596468310134" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596473972337" />
   </component>
 </project>

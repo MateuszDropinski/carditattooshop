@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import classnames from 'classnames';
-import styled from 'styled-components';
+import styled, { useTheme } from 'styled-components';
 import { HashLink as Link } from 'react-router-hash-link';
 import { useLocation } from 'react-router-dom';
 
@@ -13,15 +13,18 @@ const StickyNavbar = () => {
     const { pathname } = useLocation();
     const activeRoute = pathname.split('/')[1];
     const [isSticky, setIsSticky] = useState(false);
+    const theme: any = useTheme();
 
     const navbarClassname = classnames({
         'sticky-navbar': isSticky
     });
 
     const handleScrollEvent = () => {
-        if (window.scrollY > window.innerHeight / 2 && !isSticky) {
+        const stickyEnter = activeRoute ? theme.sidePageNavbarHeight : window.innerHeight / 2;
+
+        if (window.scrollY > stickyEnter && !isSticky) {
             setIsSticky(true);
-        } else if (window.scrollY <= window.innerHeight / 2 && isSticky) {
+        } else if (window.scrollY <= stickyEnter && isSticky) {
             setIsSticky(false);
         }
     };

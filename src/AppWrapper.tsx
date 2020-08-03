@@ -6,7 +6,8 @@ import { theme } from './theme';
 import Main from './components/Main';
 import { SidePageNavbar, StickyNavbar } from './components/Navbar';
 import Footer from './components/Footer';
-import About from './components/About';
+import SidePage from './components/SidePage';
+import { ABOUT } from './content/about';
 
 const AppWrapper = () => (
     <ThemeProvider theme={theme}>
@@ -16,7 +17,7 @@ const AppWrapper = () => (
                 <StickyNavbar />
                 <Switch>
                     <Route path="/o-nas">
-                        <About />
+                        <SidePage content={ABOUT} />
                     </Route>
                     <Route path="/">
                         <Main />
