@@ -4,7 +4,7 @@ import { Switch, Route, BrowserRouter as Router} from 'react-router-dom';
 
 import { theme } from './theme';
 import Main from './components/Main';
-import { StickyNavbar } from './components/Navbar';
+import { SidePageNavbar, StickyNavbar } from './components/Navbar';
 import Footer from './components/Footer';
 import About from './components/About';
 
@@ -12,6 +12,7 @@ const AppWrapper = () => (
     <ThemeProvider theme={theme}>
         <Router>
             <Wrapper>
+                <SidePageNavbar />
                 <StickyNavbar />
                 <Switch>
                     <Route path="/o-nas">

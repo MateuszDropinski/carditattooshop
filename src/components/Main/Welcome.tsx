@@ -2,13 +2,13 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { ArrowDown } from 'react-feather';
 
-import { Logo, StyledLinkButton } from '../styledComponents';
+import { StyledLogo, StyledLinkButton } from '../styledComponents';
 import { StaticNavbar } from '../Navbar';
 import { scrollWithOffset } from '../../utils/scroll';
 
 const Welcome = () => (
     <Wrapper>
-        <Logo src='/assets/logo_1.png' alt='Cardi Tattoo Shop' />
+        <StyledLogo src='/assets/logo_1.png' alt='Cardi Tattoo Shop' />
         <StaticNavbar />
         <Header>Cardi Tattoo Shop</Header>
         <ButtonsContainer>

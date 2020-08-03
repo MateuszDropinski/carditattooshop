@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Logo = styled.img`
+const StyledLogo = styled.img`
     position: absolute;
     top: 30px;
     left: 50px;
@@ -8,4 +8,4 @@ const Logo = styled.img`
     height: auto;
 `;
 
-export default Logo;
+export default StyledLogo;

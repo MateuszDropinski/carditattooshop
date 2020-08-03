@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import classnames from 'classnames';
 import styled from 'styled-components';
+import { HashLink as Link } from 'react-router-hash-link';
+import { useLocation } from 'react-router-dom';
 
 import Items from './Items';
-import { Logo } from '../styledComponents';
+import { StyledLogo } from '../styledComponents';
 
 import './stickyNavbar.css';
 
 const StickyNavbar = () => {
+    const { pathname } = useLocation();
+    const activeRoute = pathname.split('/')[1];
     const [isSticky, setIsSticky] = useState(false);
 
     const navbarClassname = classnames({
@@ -32,8 +36,10 @@ const StickyNavbar = () => {
 
     return (
         <Navbar className={navbarClassname}>
-            <StickyLogo src='/assets/logo_2.png' alt='Cardi Tattoo Shop' />
-            <Items />
+            <Link to='/'>
+                <Logo src='/assets/logo_2.png' alt='Cardi Tattoo Shop' />
+            </Link>
+            <Items activeTab={activeRoute} />
         </Navbar>
     );
 };
@@ -57,6 +63,12 @@ const Navbar = styled.nav`
         display: flex;
         justify-content: space-between;
         
+        li.active-tab {
+            a {
+                color: ${({ theme }) => theme.mainColor}; 
+            }
+        }
+        
         a {
             color: ${({ theme }) => theme.black};
             font-size: 20px;
@@ -72,7 +84,7 @@ const Navbar = styled.nav`
     }
 `;
 
-const StickyLogo = styled(Logo)`
+const Logo = styled(StyledLogo)`
     top: 50%;
     transform: translate(0, -50%);
     width: 50px;
