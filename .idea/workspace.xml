@@ -3,18 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9cba7ce8-15c8-49f7-bd6c-81c54dc3f92b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/CARDI.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/CARDI.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/MANCZA.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/MANCZA.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/NIESH.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/NIESH.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/PERPAN.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/PERPAN.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SidePage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SidePage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/about.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/about.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styledComponents/Anchor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styledComponents/Anchor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styledComponents/AnchorButton.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styledComponents/AnchorButton.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/scroll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/scroll.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +93,7 @@
       <workItem from="1595518257731" duration="1186000" />
       <workItem from="1595519593849" duration="593000" />
       <workItem from="1596466901548" duration="7297000" />
-      <workItem from="1596563255458" duration="5098000" />
+      <workItem from="1596563255458" duration="6390000" />
     </task>
     <servers />
   </component>
@@ -153,10 +145,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1595519629895" />
-    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1596568212167">
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1596568744183">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1596568212167" />
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1596568744183" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1596471132813">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

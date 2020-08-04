@@ -9,13 +9,14 @@ import Main from './components/Main';
 import { SidePageNavbar, StickyNavbar } from './components/Navbar';
 import Footer from './components/Footer';
 import SidePage from './components/SidePage';
+import { ScrollToTop } from './utils/scroll';
 import { ABOUT } from './content/about';
-import { ARTISTS } from './content/artists';
 
 const AppWrapper = () => (
     <ThemeProvider theme={theme}>
         <SimpleReactLightbox>
             <Router>
+                <ScrollToTop />
                 <Wrapper>
                     <SidePageNavbar />
                     <StickyNavbar />
