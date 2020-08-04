@@ -7,8 +7,8 @@ const About = () => (
     <ImageTextSection
         link='/o-nas'
         id='o-nas'
-        img={ABOUT.images[0]}
-        imgAlt={ABOUT.imgAlt}
+        img={ABOUT.images[0].src}
+        imgAlt={ABOUT.images[0].alt}
         header={ABOUT.title}
         text={ABOUT.textShortcut}
         reverse={false} />

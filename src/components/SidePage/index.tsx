@@ -1,35 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
+// @ts-ignore
+import { SRLWrapper } from 'simple-react-lightbox';
 
 import { StyledSection } from '../styledComponents';
+import { SidePageContentType } from '../../content/types';
 
 type Props = {
-    content: {
-        title: string,
-        imgAlt: string,
-        text: string,
-        images: string []
-    }
+    content: SidePageContentType
 }
 
-const SidePage: React.FC<Props> = ({ content: { title, imgAlt, text, images } }) => (
+const SidePage: React.FC<Props> = ({ content: { title, text, images } }) => (
     <section>
         <Header>{title}</Header>
         <Section>
-            <Image src={images[0]} alt={imgAlt} />
+            <Image src={images[0].src} alt={images[0].alt} />
             {text}
             <Gallery>
                 <span>Galeria</span>
-                <Images>
-                    {
-                        images.map((src, idx) => (
-                            <img
-                                key={idx}
-                                src={src}
-                                alt={`${title}-${idx}`} />
-                        ))
-                    }
-                </Images>
+                <SRLWrapper>
+                    <Images>
+                        {
+                            images.map(({ src, alt }, idx) => (
+                                <img
+                                    key={idx}
+                                    src={src}
+                                    alt={alt} />
+                            ))
+                        }
+                    </Images>
+                </SRLWrapper>
             </Gallery>
         </Section>
     </section>
@@ -51,7 +51,7 @@ const Section = styled(StyledSection)`
     text-align: left; 
     font-size: 20px;
     color: ${({ theme }) => theme.text};
-    margin-bottom: 70px;
+    margin-bottom: 0;
 `;
 
 const Image = styled.img`
@@ -79,7 +79,7 @@ const Gallery = styled.div`
 const Images = styled.div`
     display: grid;
     grid-template-columns: 16% 16% 16% 16% 16%;
-    grid-gap: 20% 5%;
+    grid-gap: 0 5%;
    
     img {
         width: 100%;
@@ -87,6 +87,7 @@ const Images = styled.div`
         cursor: pointer;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         transition: ${({ theme }) => theme.transition};
+        margin-bottom: 30%;
         
         &:hover {
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);

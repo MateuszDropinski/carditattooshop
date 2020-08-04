@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createGlobalStyle } from 'styled-components';
+// @ts-ignore
+import smoothscroll from 'smoothscroll-polyfill';
 
 import AppWrapper from './AppWrapper';
+
+smoothscroll.polyfill();
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -14,6 +18,8 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: Lato, Arial, sans-serif;
         margin: 0;
+        overflow-x: hidden;
+        scroll-behavior: smooth
     }
     ul, li {
         list-style: none;

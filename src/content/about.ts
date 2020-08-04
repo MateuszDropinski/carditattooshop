@@ -1,6 +1,7 @@
-export const ABOUT = {
+import { SidePageContentType } from './types';
+
+export const ABOUT: SidePageContentType = {
     title: 'O nas',
-    imgAlt: 'Wnętrze studia',
     textShortcut: 'Założycielem studia tatuażu Cardi Tattoo Shop jest Paweł "Cardi" Kowalczyk. '
         + 'Drzwi naszego studia po raz pierwszy otworzyły się dla klientów 5 marca 2018 roku, '
         + 'jednakże nie jest to początek naszej przygody z tatuażem...',
@@ -23,11 +24,11 @@ export const ABOUT = {
         + 'Ut finibus consequat bibendum. Maecenas mauris quam, fringilla eu viverra ac, eleifend quis dui. '
         + 'Nullam tellus mi, blandit a metus vel, gravida cursus tortor.',
     images: [
-        '/assets/about_1.jpg',
-        '/assets/about_2.jpg',
-        '/assets/about_3.jpg',
-        '/assets/about_3.jpg',
-        '/assets/about_3.jpg',
-        '/assets/about_3.jpg'
+        { src: '/assets/about_1.jpg', alt: 'Studio' },
+        { src: '/assets/about_2.jpg', alt: 'Studio' },
+        { src: '/assets/about_3.jpg', alt: 'Studio' },
+        { src: '/assets/about_3.jpg', alt: 'Studio' },
+        { src: '/assets/about_3.jpg', alt: 'Studio' },
+        { src: '/assets/about_3.jpg', alt: 'Studio' }
     ]
 };

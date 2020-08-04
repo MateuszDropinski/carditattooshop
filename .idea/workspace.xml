@@ -3,13 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="9cba7ce8-15c8-49f7-bd6c-81c54dc3f92b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/CARDI.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/CARDI.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/MANCZA.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/MANCZA.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/NIESH.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/NIESH.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/PERPAN.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/PERPAN.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/index.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/SidePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/SidePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Sticky.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Sticky.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SidePage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SidePage/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/about.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/about.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/scroll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/scroll.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +100,8 @@
       <workItem from="1595516356521" duration="1878000" />
       <workItem from="1595518257731" duration="1186000" />
       <workItem from="1595519593849" duration="593000" />
-      <workItem from="1596466901548" duration="7230000" />
+      <workItem from="1596466901548" duration="7297000" />
+      <workItem from="1596563255458" duration="5098000" />
     </task>
     <servers />
   </component>
@@ -119,22 +125,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596467267327" />
-    <state width="1515" height="248" key="GridCell.Tab.0.bottom" timestamp="1595520189789">
+    <state width="1515" height="255" key="GridCell.Tab.0.bottom" timestamp="1596566720041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="248" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595520189789" />
-    <state width="1515" height="248" key="GridCell.Tab.0.center" timestamp="1595520189789">
+    <state width="1515" height="255" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596566720041" />
+    <state width="1515" height="255" key="GridCell.Tab.0.center" timestamp="1596566720040">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="248" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595520189789" />
-    <state width="1515" height="248" key="GridCell.Tab.0.left" timestamp="1595520189789">
+    <state width="1515" height="255" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596566720040" />
+    <state width="1515" height="255" key="GridCell.Tab.0.left" timestamp="1596566720040">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="248" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595520189789" />
-    <state width="1515" height="248" key="GridCell.Tab.0.right" timestamp="1595520189789">
+    <state width="1515" height="255" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596566720040" />
+    <state width="1515" height="255" key="GridCell.Tab.0.right" timestamp="1596566720041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="248" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595520189789" />
+    <state width="1515" height="255" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596566720041" />
     <state x="277" y="57" width="1130" height="709" key="SettingsEditor" timestamp="1594305436352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -147,17 +153,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1595519629895" />
-    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1596473970800">
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1596568212167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1596473970800" />
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1596568212167" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1596471132813">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1596471132813" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596473972337">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596568213126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596473972337" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596568213126" />
   </component>
 </project>
