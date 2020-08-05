@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import _ from 'lodash/fp';
 // @ts-ignore
 import { SRLWrapper } from 'simple-react-lightbox';
 
@@ -7,40 +8,50 @@ import { StyledSection } from '../styledComponents';
 import { SidePageContentType } from '../../content/types';
 
 type Props = {
-    content: SidePageContentType
+    content: SidePageContentType,
+    withoutFirstImage?: boolean
 }
 
-const SidePage: React.FC<Props> = ({ content: { title, text, images } }) => (
-    <section>
-        <Header>{title}</Header>
-        <Section>
-            <Image src={images[0].src} alt={images[0].alt} />
-            {text}
-            <Gallery>
-                <span>Galeria</span>
-                <SRLWrapper>
-                    <Images>
-                        {
-                            images.map(({ src, alt }, idx) => (
-                                <img
-                                    key={idx}
-                                    src={src}
-                                    alt={alt} />
-                            ))
-                        }
-                    </Images>
-                </SRLWrapper>
-            </Gallery>
-        </Section>
-    </section>
-);
+const SidePage: React.FC<Props> = ({ content: { title, text, images }, withoutFirstImage }) => {
+    const galleryImages = withoutFirstImage ? _.tail(images): images;
+
+    return (
+        <section>
+            <Header>{title}</Header>
+            <Section>
+                <Content>
+                    <Image
+                        style={{ width: `${images[0].vertical ? 300 : 400}px` }}
+                        src={images[0].src}
+                        alt={images[0].alt} />
+                    {text}
+                </Content>
+                <Gallery>
+                    <span>Galeria</span>
+                    <SRLWrapper>
+                        <Images>
+                            {
+                                galleryImages.map(({ src, alt }, idx) => (
+                                    <img
+                                        key={idx}
+                                        src={src}
+                                        alt={alt} />
+                                ))
+                            }
+                        </Images>
+                    </SRLWrapper>
+                </Gallery>
+            </Section>
+        </section>
+    );
+}
 
 const Header = styled.h2`
     text-align: center;
     background-image: url("/assets/texture.png");
     color: ${({ theme }) => theme.mainColor};
     margin: 0;
-    padding: 25px;
+    padding: 35px;
     font-size: 60px;
     box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 `;
@@ -54,8 +65,11 @@ const Section = styled(StyledSection)`
     margin-bottom: 0;
 `;
 
+const Content = styled.div`
+    overflow: auto;
+`;
+
 const Image = styled.img`
-    width: 400px; 
     height: auto;
     float: left;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -80,6 +94,7 @@ const Images = styled.div`
     display: grid;
     grid-template-columns: 16% 16% 16% 16% 16%;
     grid-gap: 0 5%;
+    align-items: center;
    
     img {
         width: 100%;

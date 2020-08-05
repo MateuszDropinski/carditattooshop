@@ -1,29 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useHistory } from 'react-router-dom';
 
 import { StyledAnchor } from '../styledComponents';
+import { ArtistContentType } from '../../content/types';
 
-type Artist = {
-    name: string,
-    alias: string,
-    img: string,
-    infoShortcut: string
+const Artist: React.FC<ArtistContentType> = ({ title, alias, images, textShortcut }) => {
+    const history = useHistory();
+
+    const onClick = () => {
+        history.push(`/${alias}`);
+    };
+
+    return (
+        <Wrapper onClick={onClick}>
+            <Image src={images[0].src} alt={images[0].alt} />
+            <Caption>
+                <Alias>{alias}</Alias>
+                {title}
+            </Caption>
+            <Info>
+                <Alias>{alias}</Alias>
+                {textShortcut}
+                <Anchor to={`/${alias}`}>Zobacz moje prace!</Anchor>
+            </Info>
+        </Wrapper>
+    );
 }
-
-const Artist: React.FC<Artist> = ({ name, alias, img, infoShortcut }) => (
-    <Wrapper>
-        <Image src={img} alt={alias} />
-        <Caption>
-            <Alias>{alias}</Alias>
-            {name}
-        </Caption>
-        <Info>
-            <Alias>{alias}</Alias>
-            {infoShortcut}
-            <Anchor to='/artist'>Zobacz moje prace!</Anchor>
-        </Info>
-    </Wrapper>
-);
 
 const Caption = styled.figcaption`
     width: 100%;

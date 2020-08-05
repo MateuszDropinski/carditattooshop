@@ -7,9 +7,9 @@ const Laser = () => (
     <ImageTextSection
         link='/laser'
         id='laser'
-        img={LASER.img}
-        imgAlt={LASER.imgAlt}
-        header='Laser'
+        img={LASER.images[0].src}
+        imgAlt={LASER.images[0].alt}
+        header={LASER.title}
         text={LASER.textShortcut}
         reverse />
 );

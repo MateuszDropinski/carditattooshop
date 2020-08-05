@@ -1,16 +1,14 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 // @ts-ignore
 import SimpleReactLightbox from 'simple-react-lightbox';
 
 import { theme } from './theme';
-import Main from './components/Main';
 import { SidePageNavbar, StickyNavbar } from './components/Navbar';
 import Footer from './components/Footer';
-import SidePage from './components/SidePage';
 import { ScrollToTop } from './utils/scroll';
-import { ABOUT } from './content/about';
+import Routes from './components/Routes';
 
 const AppWrapper = () => (
     <ThemeProvider theme={theme}>
@@ -20,14 +18,7 @@ const AppWrapper = () => (
                 <Wrapper>
                     <SidePageNavbar />
                     <StickyNavbar />
-                    <Switch>
-                        <Route exact path="/o-nas">
-                            <SidePage content={ABOUT} />
-                        </Route>
-                        <Route exact path="/">
-                            <Main />
-                        </Route>
-                    </Switch>
+                    <Routes />
                     <Footer />
                 </Wrapper>
             </Router>
