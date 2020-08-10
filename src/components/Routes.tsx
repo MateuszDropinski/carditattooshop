@@ -6,6 +6,7 @@ import { ABOUT } from '../content/about';
 import { LASER } from '../content/laser';
 import Main from './Main';
 import { ARTISTS } from '../content/artists';
+import Blog from './Blog';
 
 const Routes = () => (
     <Switch>
@@ -22,6 +23,9 @@ const Routes = () => (
                 </Route>
             ))
         }
+        <Route exact path="/blog">
+            <Blog />
+        </Route>
         <Route exact path="/">
             <Main />
         </Route>

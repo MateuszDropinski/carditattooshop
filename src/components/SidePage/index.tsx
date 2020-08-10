@@ -6,6 +6,7 @@ import { SRLWrapper } from 'simple-react-lightbox';
 
 import { StyledSection } from '../styledComponents';
 import { SidePageContentType } from '../../content/types';
+import SidePageHeader from '../SidePageHeader';
 
 type Props = {
     content: SidePageContentType,
@@ -13,11 +14,11 @@ type Props = {
 }
 
 const SidePage: React.FC<Props> = ({ content: { title, text, images }, withoutFirstImage }) => {
-    const galleryImages = withoutFirstImage ? _.tail(images): images;
+    const galleryImages = withoutFirstImage ? _.tail(images) : images;
 
     return (
         <section>
-            <Header>{title}</Header>
+            <SidePageHeader>{title}</SidePageHeader>
             <Section>
                 <Content>
                     <Image
@@ -44,17 +45,7 @@ const SidePage: React.FC<Props> = ({ content: { title, text, images }, withoutFi
             </Section>
         </section>
     );
-}
-
-const Header = styled.h2`
-    text-align: center;
-    background-image: url("/assets/texture.png");
-    color: ${({ theme }) => theme.mainColor};
-    margin: 0;
-    padding: 35px;
-    font-size: 60px;
-    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-`;
+};
 
 const Section = styled(StyledSection)`
     display: block;   

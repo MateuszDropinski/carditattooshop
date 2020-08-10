@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { StyledSection, SectionHeader, StyledLinkButton } from '../styledComponents';
-import Post from './Post';
+import Post from '../Post';
 import { BLOG } from '../../content/blog';
 
 const Blog = () => (

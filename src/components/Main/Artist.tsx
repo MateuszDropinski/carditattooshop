@@ -22,11 +22,11 @@ const Artist: React.FC<ArtistContentType> = ({ title, alias, images, textShortcu
             <Info>
                 <Alias>{alias}</Alias>
                 {textShortcut}
-                <Anchor to={`/${alias}`}>Zobacz moje prace!</Anchor>
+                <Anchor onClick={(e) => e.stopPropagation()} to={`/${alias}`}>Zobacz moje prace!</Anchor>
             </Info>
         </Wrapper>
     );
-}
+};
 
 const Caption = styled.figcaption`
     width: 100%;
