@@ -7,6 +7,7 @@ import { LASER } from '../content/laser';
 import Main from './Main';
 import { ARTISTS } from '../content/artists';
 import Blog from './Blog';
+import PostPage from './PostPage';
 
 const Routes = () => (
     <Switch>
@@ -25,6 +26,9 @@ const Routes = () => (
         }
         <Route exact path="/blog">
             <Blog />
+        </Route>
+        <Route exact path="/blog/:slug">
+            <PostPage />
         </Route>
         <Route exact path="/">
             <Main />

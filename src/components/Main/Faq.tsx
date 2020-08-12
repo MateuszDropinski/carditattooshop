@@ -51,7 +51,7 @@ const Parallax = styled.div`
     width: 100%;
     position: relative;
     height: 400px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     background-size: 100%;
     background-image: url("/assets/background_2.jpg");
 `;

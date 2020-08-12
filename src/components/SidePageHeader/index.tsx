@@ -7,7 +7,7 @@ const SidePageHeader: React.FC = ({ children }) => (
     </Header>
 );
 
-const Header = styled.h2`
+export const Header = styled.h2`
     text-align: center;
     background-image: url("/assets/texture.png");
     color: ${({ theme }) => theme.mainColor};

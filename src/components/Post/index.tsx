@@ -1,27 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useHistory } from 'react-router-dom';
 
 import { StyledLink } from '../styledComponents';
+import { PostType } from '../../content/types';
 
-type PostType = {
-    title: string,
-    textShortcut: string,
-    date: string,
-    img: string,
-    imgAlt: string
-}
+const Post: React.FC<PostType> = ({ title, textShortcut, date, image }) => {
+    const history = useHistory();
+    const postSlug = title.split(' ').join('_');
 
-const Post: React.FC<PostType> = ({ title, textShortcut, date, img, imgAlt }) => (
-    <Wrapper>
-        <Image src={img} alt={imgAlt} />
-        <Caption>
-            <Header>{title}</Header>
-            <Text>{textShortcut}</Text>
-            <Date>{date}</Date>
-            <Anchor to='/blog'>Czytaj dalej!</Anchor>
-        </Caption>
-    </Wrapper>
-);
+    const onClick = () => {
+        history.push(`/blog/${postSlug}`);
+    };
+
+    return (
+        <Wrapper id={title.split(' ').join('_')}>
+            <Image onClick={onClick} src={image.src} alt={image.alt} />
+            <Caption>
+                <Header>{title}</Header>
+                <Text>{textShortcut}</Text>
+                <Date>{date}</Date>
+                <Anchor to={`/blog/${postSlug}`}>Czytaj dalej!</Anchor>
+            </Caption>
+        </Wrapper>
+    );
+};
 
 const Wrapper = styled.figure`
     width: 40%;
