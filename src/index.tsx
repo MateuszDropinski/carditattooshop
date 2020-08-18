@@ -19,7 +19,8 @@ const GlobalStyle = createGlobalStyle`
         font-family: Lato, Arial, sans-serif;
         margin: 0;
         overflow-x: hidden;
-        scroll-behavior: smooth
+        scroll-behavior: smooth;
+        background-color: #0a0114;
     }
     ul, li {
         list-style: none;

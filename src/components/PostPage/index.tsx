@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import styled from 'styled-components';
 
 import { BLOG } from '../../content/blog';
 import PostHeader from './PostHeader';
 import { PostContent, PostContentType, PostType } from '../../content/types';
 import PostImage from './PostImage';
 import PostText from './PostText';
+import { StyledSectionWithPadding } from '../styledComponents';
 
 const getPostSection = ({ type, payload }: PostContent, idx: number) => {
     switch (type) {
@@ -33,15 +33,11 @@ const PostPage = () => {
             <PostHeader date={post.date} author={post.author.title}>
                 {post.title}
             </PostHeader>
-            <Content>
+            <StyledSectionWithPadding>
                 {post.content.map(getPostSection)}
-            </Content>
+            </StyledSectionWithPadding>
         </div>
     );
 };
-
-const Content = styled.section`
-    padding-top: 70px;
-`;
 
 export default PostPage;

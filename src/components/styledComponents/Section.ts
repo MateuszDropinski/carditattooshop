@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const StyledSection = styled.section`
-    max-width: 1120px;
+export const StyledSection = styled.section`
+    max-width: 1160px;
     margin: 0 auto 100px auto;
     display: flex;
     justify-content: center;
@@ -10,6 +10,7 @@ const StyledSection = styled.section`
     height: 100%;
 `;
 
-// Margin bottom set in Faq for Parallax
-
-export default StyledSection;
+export const StyledSectionWithPadding = styled(StyledSection)`
+    padding: 70px 0;
+    margin-bottom: 0;
+`;

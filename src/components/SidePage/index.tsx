@@ -4,7 +4,7 @@ import _ from 'lodash/fp';
 // @ts-ignore
 import { SRLWrapper } from 'simple-react-lightbox';
 
-import { StyledSection } from '../styledComponents';
+import { StyledSectionWithPadding } from '../styledComponents';
 import { SidePageContentType } from '../../content/types';
 import SidePageHeader from '../SidePageHeader';
 
@@ -47,9 +47,8 @@ const SidePage: React.FC<Props> = ({ content: { title, text, images }, withoutFi
     );
 };
 
-const Section = styled(StyledSection)`
+const Section = styled(StyledSectionWithPadding)`
     display: block;   
-    padding: 70px 0;
     text-align: left; 
     font-size: 20px;
     color: ${({ theme }) => theme.text};

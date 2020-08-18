@@ -20,6 +20,7 @@ const Header = styled.h4`
     align-self: flex-start;
     border-bottom: 2px solid ${({ theme }) => theme.mainColor};
     margin: 0 0 30px 0;
+    color: ${({ theme }) => theme.black};
 `;
 
 const Section = styled(StyledSection)`

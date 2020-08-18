@@ -11,7 +11,7 @@ type Props = {
 
 const PostImage: React.FC<Props> = ({ src, alt, vertical }) => (
     <StyledSection>
-        <Image style={{ width: `${vertical ? 50 : 75}%` }} src={src} alt={alt} />
+        <Image style={{ width: `${vertical ? 33 : 66}%` }} src={src} alt={alt} />
     </StyledSection>
 );
 

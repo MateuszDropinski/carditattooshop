@@ -40,7 +40,7 @@ const StickyNavbar = () => {
     return (
         <Navbar className={navbarClassname}>
             <Link to='/'>
-                <Logo src='/assets/logo_2.png' alt='Cardi Tattoo Shop' />
+                <Logo src='/assets/logo_1.png' alt='Cardi Tattoo Shop' />
             </Link>
             <Items activeTab={activeRoute} />
         </Navbar>
@@ -56,7 +56,7 @@ const Navbar = styled.nav`
     left: 0;
     width: 100%;
     padding: 15px 0;
-    background-color: ${({ theme }) => theme.white};
+    background-color: ${({ theme }) => theme.black};
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: ${({ theme }) => theme.transition};
     transform: translateY(-120%);
@@ -73,7 +73,7 @@ const Navbar = styled.nav`
         }
         
         a {
-            color: ${({ theme }) => theme.black};
+            color: ${({ theme }) => theme.white};
             font-size: 20px;
             
             &:hover {
