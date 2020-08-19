@@ -53,7 +53,7 @@ const Parallax = styled.div`
     height: 400px;
     margin-bottom: 100px;
     background-size: 100%;
-    background-image: url("/assets/background_2.jpg");
+    background-image: url("./assets/background_2.jpg");
 `;
 
 const Section = styled(StyledSection)`

@@ -5,7 +5,7 @@ export const ARTISTS: ArtistContentType[] = [
         title: 'Paweł Kowalczyk',
         alias: 'Cardi',
         images: [
-            { src: '/assets/CARDI.jpg', alt: 'Cardi', vertical: true }
+            { src: './assets/CARDI.jpg', alt: 'Cardi', vertical: true }
         ],
         textShortcut: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut '
             + 'labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
@@ -35,7 +35,7 @@ export const ARTISTS: ArtistContentType[] = [
         title: 'Aleksandra Kowalczyk',
         alias: 'Mancza',
         images: [
-            { src: '/assets/MANCZA.jpg', alt: 'Mancza', vertical: true }
+            { src: './assets/MANCZA.jpg', alt: 'Mancza', vertical: true }
         ],
         textShortcut: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut '
             + 'labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
@@ -65,7 +65,7 @@ export const ARTISTS: ArtistContentType[] = [
         title: 'Kacper Paroń',
         alias: 'PerPan',
         images: [
-            { src: '/assets/PERPAN.jpg', alt: 'PerPan', vertical: true }
+            { src: './assets/PERPAN.jpg', alt: 'PerPan', vertical: true }
         ],
         textShortcut: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut '
             + 'labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
@@ -95,7 +95,7 @@ export const ARTISTS: ArtistContentType[] = [
         title: 'Agnieszka Dudkiewicz',
         alias: 'Niesh',
         images: [
-            { src: '/assets/NIESH.jpg', alt: 'Niesh', vertical: true }
+            { src: './assets/NIESH.jpg', alt: 'Niesh', vertical: true }
         ],
         textShortcut: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut '
             + 'labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'

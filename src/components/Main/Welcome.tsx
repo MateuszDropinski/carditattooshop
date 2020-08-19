@@ -8,7 +8,7 @@ import { scrollWithOffset } from '../../utils/scroll';
 
 const Welcome = () => (
     <Wrapper>
-        <StyledLogo src='/assets/logo_1.png' alt='Cardi Tattoo Shop' />
+        <StyledLogo src='./assets/logo_1.png' alt='Cardi Tattoo Shop' />
         <StaticNavbar />
         <Header>Cardi Tattoo Shop</Header>
         <ButtonsContainer>
@@ -28,7 +28,7 @@ const Welcome = () => (
 
 const Wrapper = styled.section`
     background-color: ${({ theme }) => theme.black};
-    background-image: url('/assets/background_1.jpg');
+    background-image: url('./assets/background_1.jpg');
     background-size: cover;
     background-position: center center;
     width: 100%;

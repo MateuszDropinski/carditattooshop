@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useForm } from 'react-hook-form';
 
 import { anchorButtonStyles } from '../styledComponents/AnchorButton';
 import { StyledSection, SectionHeader } from '../styledComponents';
+
+const showSendingResult = (result: boolean | null) => {
+    if (result !== null) {
+        return result
+            ? <Success>Mail został wysłany!</Success>
+            : (
+                <Error>
+                    Niestety nie udało się wysłać maila, spróbuj przez własną skrzynke pocztową.
+                    Nasz adres e-mail: carditattooshop@gmail.com.
+                </Error>
+            );
+    }
+};
 
 type Inputs = {
     name: string,
@@ -13,10 +26,23 @@ type Inputs = {
 };
 
 const Form = () => {
-    const { handleSubmit, register, errors } = useForm<Inputs>();
+    const [emailSent, setEmailSent] = useState<boolean | null>(null);
+    const { handleSubmit, register, errors, reset } = useForm<Inputs>();
 
     const onSubmit = (data: Inputs) => {
-        console.log(data);
+        fetch('./php/contact.php', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then()
+            .then(() => {
+                setEmailSent(true);
+                reset();
+            })
+            .catch((err) => {
+                setEmailSent(false);
+            });
     };
 
     return (
@@ -27,13 +53,28 @@ const Form = () => {
             <FormContainer onSubmit={handleSubmit(onSubmit)}>
                 <Input placeholder="Imię...*" name="name" ref={register({ required: true })} />
                 { errors.name && <Error>Potrzebujemy abyś podał nam swoje imię!</Error>}
-                <Input placeholder="E-mail...*" type="email" name="email" ref={register({ required: true })} />
-                { errors.email && <Error>Potrzebujemy abyś podał nam swój e-mail!</Error>}
+                <Input
+                    placeholder="E-mail...*"
+                    type="email"
+                    name="email"
+                    ref={register({
+                        required: true,
+                        pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: 'Niepoprawny e-mail'
+                        }
+                    })} />
+                { errors.email && (
+                    errors.email.type === 'pattern'
+                        ? (<Error>{errors.email.message}</Error>)
+                        : (<Error>Potrzebujemy abyś podał nam swój e-mail!</Error>)
+                )}
                 <Textarea placeholder="Wiadomość...*" name="message" ref={register({ required: true })} />
                 { errors.message && <Error>Potrzebujemy abyś podał nam więcej informacji!</Error>}
                 <Input placeholder="Telefon...*" type="tel" name="phone" ref={register({ required: true })} />
                 { errors.phone && <Error>Potrzebujemy abyś podał nam swój telefon!</Error>}
                 <SubmitInput value="Wyślij!" type="submit" />
+                {showSendingResult(emailSent)}
             </FormContainer>
         </Section>
     );
@@ -84,7 +125,12 @@ const Textarea = styled.textarea`
 `;
 
 const Error = styled.span`
-    color: red;
+    color: #cb5555;
+    margin-top: 5px;
+`;
+
+const Success = styled.span`
+    color: #6bcb55;
     margin-top: 5px;
 `;
 

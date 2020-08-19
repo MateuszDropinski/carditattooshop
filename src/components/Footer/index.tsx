@@ -7,7 +7,7 @@ import { StyledLogo, StyledExternalAnchor } from '../styledComponents';
 
 const Footer = () => (
     <FooterContainer>
-        <Logo src='/assets/logo_1.png' alt='Cardi tattoo' />
+        <Logo src='./assets/logo_1.png' alt='Cardi tattoo' />
         <Info>Studio tatuażu Wrocław <br /> Cardi Tattoo Shop</Info>
         <Info>Adres: <br /> {ADDRESS[0]} <br /> {ADDRESS[1]}</Info>
         <Info>Kontakt: <br /> tel: +48 796 787 653 <br /> email: carditattooshop@gmail.com</Info>
