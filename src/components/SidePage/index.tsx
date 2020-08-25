@@ -62,16 +62,23 @@ const Section = styled(StyledSectionWithPadding)`
 
 const Content = styled.div`
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media ${device.tablet} {
+        display: block;
+    }
 `;
 
 const Image = styled.img`
     height: auto;
-    float: left;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     margin: 0 0 20px 0;
     
     @media ${device.tablet} {
-        margin: 0 45px 40px 0;      
+        margin: 0 45px 40px 0;  
+        float: left;    
     }
 `;
 

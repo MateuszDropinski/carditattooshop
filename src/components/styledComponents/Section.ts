@@ -4,7 +4,7 @@ import { device } from '../../utils/device';
 
 export const StyledSection = styled.section`
     width: 80%;
-    margin: 0 10% 70px 10%;
+    margin: 0 10% 60px 10%;
     display: flex;
     justify-content: center;
     text-align: center;

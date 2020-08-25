@@ -40,9 +40,6 @@ const Caption = styled.figcaption`
     font-size: 18px;
     border: 1px solid ${({ theme }) => theme.mainColor};
     transition: ${({ theme }) => theme.transition};
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 `;
 
 const Info = styled.p`
@@ -65,7 +62,7 @@ const Info = styled.p`
 
 const Wrapper = styled.figure`
     width: 80%;
-    margin: 0 10% 30px 10%;
+    margin: 20px 10%;
     position: relative;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     cursor: pointer;

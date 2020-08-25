@@ -68,7 +68,7 @@ const Header = styled.h1`
 
 const ButtonsContainer = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
     bottom: 0;
@@ -82,10 +82,6 @@ const ButtonsContainer = styled.div`
         justify-content: space-between;
         width: 550px;
         font-size: 20px;
-    }
-    
-    span {
-        margin: 0 15px;
     }
 `;
 
