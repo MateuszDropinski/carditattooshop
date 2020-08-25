@@ -3,7 +3,7 @@ import { SidePageContentType } from './types';
 export const LASER: SidePageContentType = {
     title: 'Laser',
     images: [
-        { src: './assets/about_1.jpg', alt: 'Laser' }
+        { src: '/assets/about_1.jpg', alt: 'Laser' }
     ],
     textShortcut: 'Założycielem studia tatuażu Cardi Tattoo Shop jest Paweł "Cardi" Kowalczyk. '
         + 'Drzwi naszego studia po raz pierwszy otworzyły się dla klientów 5 marca 2018 roku, '

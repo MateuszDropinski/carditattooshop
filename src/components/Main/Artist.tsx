@@ -40,6 +40,8 @@ const Caption = styled.figcaption`
     font-size: 18px;
     border: 1px solid ${({ theme }) => theme.mainColor};
     transition: ${({ theme }) => theme.transition};
+    display: flex;
+    flex-direction: column;
 `;
 
 const Info = styled.p`

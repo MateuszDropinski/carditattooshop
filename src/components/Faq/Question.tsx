@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import { ArrowDown } from 'react-feather';
+import { device } from '../../utils/device';
 
 type Props = {
     question: string,
@@ -46,10 +47,15 @@ const QuestionContainer = styled.div`
 const StyledQuestion = styled.p`
     color: ${({ theme }) => theme.mainColor};
     transition: ${({ theme }) => theme.transition};
-    font-size: 22px;
+    font-size: 18px;
     display: flex;
     align-items: center;
-    padding: 20px 10px 10px;
+    padding: 10px 5px 5px;
+    
+    @media ${device.tablet} {
+        font-size: 22px;  
+        padding: 20px 10px 10px;
+    }
     
     svg {
         transition: transform ${({ theme }) => theme.transition};
@@ -64,13 +70,19 @@ const StyledQuestion = styled.p`
 `;
 
 const StyledAnswer = styled.p`
-    padding: 0 45px;
-    margin-bottom: 10px;
-    font-size: 18px;
+    padding: 0 40px;
+    margin-bottom: 5px;
+    font-size: 16px;
     overflow: hidden;
     transition: ${({ theme }) => theme.transition};
     color: ${({ theme }) => theme.text};
     text-align: left;
+    
+    @media ${device.tablet} {
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 0 45px;
+    }
 `;
 
 export default Question;

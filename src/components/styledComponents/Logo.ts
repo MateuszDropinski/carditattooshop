@@ -12,7 +12,7 @@ const StyledLogo = styled.img`
     @media ${device.tablet} {
         top: 30px;
         left: 50px;
-        width: 100px;    
+        width: 60px;    
     }
 `;
 

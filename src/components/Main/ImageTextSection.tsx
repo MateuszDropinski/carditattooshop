@@ -28,7 +28,7 @@ const ImageTextSection: React.FC<Props> = ({ id, img, imgAlt, header, text, reve
 
 const Section = styled(StyledSection)`
     justify-content: space-between;
-    flex-direction: column !important; 
+    flex-direction: column; 
     align-items: center;
     
     @media ${device.tablet} {

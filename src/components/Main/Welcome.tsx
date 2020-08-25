@@ -3,14 +3,15 @@ import styled, { keyframes } from 'styled-components';
 import { ArrowDown } from 'react-feather';
 
 import { StyledLogo, StyledLinkButton } from '../styledComponents';
-import { StaticNavbar } from '../Navbar';
+import { StaticNavbar, MobileNavbar } from '../Navbar';
 import { scrollWithOffset } from '../../utils/scroll';
 import { device } from '../../utils/device';
 
 const Welcome = () => (
     <Wrapper>
-        <StyledLogo src='./assets/logo_1.png' alt='Cardi Tattoo Shop' />
+        <Logo src='/assets/logo_1.png' alt='Cardi Tattoo Shop' />
         <StaticNavbar />
+        <MobileNavbar />
         <Header>Cardi Tattoo Shop</Header>
         <ButtonsContainer>
             <Button scroll={scrollWithOffset} to='#o-nas'>
@@ -27,9 +28,15 @@ const Welcome = () => (
     </Wrapper>
 );
 
+const Logo = styled(StyledLogo)`
+    @media ${device.tablet} {
+        width: 100px;
+    }
+`;
+
 const Wrapper = styled.section`
     background-color: ${({ theme }) => theme.black};
-    background-image: url('./assets/background_1.jpg');
+    background-image: url('/assets/background_1.jpg');
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -68,7 +75,7 @@ const Header = styled.h1`
 
 const ButtonsContainer = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     position: absolute;
     bottom: 0;
@@ -82,6 +89,10 @@ const ButtonsContainer = styled.div`
         justify-content: space-between;
         width: 550px;
         font-size: 20px;
+    }
+    
+    span {
+        margin: 0 15px;
     }
 `;
 

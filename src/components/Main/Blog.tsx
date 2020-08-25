@@ -26,7 +26,6 @@ const Posts = styled.div`
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin-bottom: 20px;
     
     @media ${device.tablet} {
         margin: 0;

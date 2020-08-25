@@ -12,7 +12,6 @@ export const StyledSection = styled.section`
     height: 100%;
     
     @media ${device.tablet} {
-        flex-direction: row;
         max-width: 1160px;
         margin: 0 auto 100px auto;
     }
@@ -24,5 +23,6 @@ export const StyledSectionWithPadding = styled(StyledSection)`
     
     @media ${device.tablet} {
         padding: 70px 0;
+        margin-bottom: 0;
     }
 `;
