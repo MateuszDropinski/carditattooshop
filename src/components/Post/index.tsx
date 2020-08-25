@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 import { StyledLink } from '../styledComponents';
 import { PostType } from '../../content/types';
+import { device } from '../../utils/device';
 
 const Post: React.FC<PostType> = ({ title, textShortcut, date, image }) => {
     const history = useHistory();
@@ -27,10 +28,15 @@ const Post: React.FC<PostType> = ({ title, textShortcut, date, image }) => {
 };
 
 const Wrapper = styled.figure`
-    width: 40%;
+    width: 100%;
     position: relative;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    margin: 3%
+    margin: 0 0 30px 0;
+    
+    @media ${device.tablet} {
+        width: 40%;
+        margin: 3%;
+    }
 `;
 
 const Image = styled.img`
@@ -50,27 +56,44 @@ const Caption = styled.figcaption`
     background-color: ${({ theme }) => theme.white};
     color: ${({ theme }) => theme.black};
     border: 1px solid ${({ theme }) => theme.mainColor};
-    padding: 20px;
+    padding: 15px;
+    
+    @media ${device.tablet} {
+        padding: 20px;
+    }
 `;
 
 const Header = styled.h3`
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     border-bottom: 2px solid ${({ theme }) => theme.mainColor};
     margin-top: 0;
+    
+    @media ${device.tablet} {
+        font-size: 26px;
+    }
 `;
 
 const Text = styled.p`
     color: ${({ theme }) => theme.text};
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: left;
-    font-size: 16px;
+    font-size: 14px;
+    
+    @media ${device.tablet} {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
 `;
 
 const Date = styled.p`
     color: ${({ theme }) => theme.text};    
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-size: 14px;
+    
+    @media ${device.tablet} {
+        margin-bottom: 25px;
+    }
 `;
 
 const Anchor = styled(StyledLink)`

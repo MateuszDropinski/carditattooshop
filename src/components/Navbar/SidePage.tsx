@@ -5,6 +5,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 import { StyledLogo } from '../styledComponents';
 import Items from './Items';
+import { device } from '../../utils/device';
 
 const SidePageNavbar = () => {
     const { pathname } = useLocation();
@@ -26,11 +27,15 @@ const Navbar = styled.nav`
     background-color: ${({ theme }) => theme.black};
     width: 100%;
     margin: auto;
-    display: flex;
+    display: none;
     justify-content: center;
     height: ${({ theme }) => theme.sidePageNavbarHeight}px;
     position: relative;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+    @media ${device.tablet} {
+        display: flex;
+    }
     
     ul {
         width: 700px;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { StyledSection, StyledLinkButton } from '../styledComponents';
 import { QUESTIONS } from '../../content/faq';
+import { device } from '../../utils/device';
 
 type QuestionType = {
     question: string,
@@ -41,7 +42,7 @@ const Faq = () => {
                     <Question>{question.question}</Question>
                     <Answer>{question.answer}</Answer>
                 </QuestionContainer>
-                <StyledLinkButton to='/faq'>Zobacz inne często zadawane pytania!</StyledLinkButton>
+                <StyledLinkButton to='/faq'>Sprawdź inne pytania!</StyledLinkButton>
             </Section>
         </Parallax>
     );
@@ -50,10 +51,15 @@ const Faq = () => {
 const Parallax = styled.div`
     width: 100%;
     position: relative;
-    height: 400px;
-    margin-bottom: 100px;
-    background-size: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+    background-size: cover;
     background-image: url("./assets/background_2.jpg");
+    
+    @media ${device.tablet} {
+        height: 400px;     
+        margin-bottom: 100px;   
+    }
 `;
 
 const Section = styled(StyledSection)`
@@ -70,15 +76,24 @@ const QuestionContainer = styled.div`
 `;
 
 const Question = styled.p`
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 700;
-    color: ${({ theme }) => theme.mainColor}
+    color: ${({ theme }) => theme.mainColor};
+    
+    @media ${device.tablet} {
+        font-size: 32px;
+    }
 `;
 
 const Answer = styled.p`
-    font-size: 20px;
+    font-size: 14px;
     color: ${({ theme }) => theme.white};
-    margin-top: 40px;
+    margin-top: 20px;
+    
+    @media ${device.tablet} {
+        font-size: 20px;
+        margin-top: 40px;
+    }
 `;
 
 export default Faq;

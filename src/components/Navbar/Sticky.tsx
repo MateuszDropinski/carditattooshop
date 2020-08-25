@@ -8,6 +8,7 @@ import Items from './Items';
 import { StyledLogo } from '../styledComponents';
 
 import './stickyNavbar.css';
+import { device } from '../../utils/device';
 
 const StickyNavbar = () => {
     const { pathname } = useLocation();
@@ -38,8 +39,8 @@ const StickyNavbar = () => {
     });
 
     return (
-        <Navbar className={navbarClassname}>
-            <Link to='/'>
+        <Navbar className={navbarClassname}>`
+            <Link to='/'>`
                 <Logo src='./assets/logo_1.png' alt='Cardi Tattoo Shop' />
             </Link>
             <Items activeTab={activeRoute} />
@@ -48,7 +49,7 @@ const StickyNavbar = () => {
 };
 
 const Navbar = styled.nav`
-    display: flex;
+    display: none;
     justify-content: center;
     position: fixed;
     z-index: 1;
@@ -60,6 +61,10 @@ const Navbar = styled.nav`
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: ${({ theme }) => theme.transition};
     transform: translateY(-120%);
+    
+    @media ${device.tablet} {
+        display: flex;
+    }
     
     ul {
         width: 650px;

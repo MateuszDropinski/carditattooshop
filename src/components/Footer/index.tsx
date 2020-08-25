@@ -1,13 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Facebook, Instagram } from 'react-feather';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import { ADDRESS } from '../../content/address';
 import { StyledLogo, StyledExternalAnchor } from '../styledComponents';
+import { device } from '../../utils/device';
 
 const Footer = () => (
     <FooterContainer>
-        <Logo src='./assets/logo_1.png' alt='Cardi tattoo' />
+        <Link to='/'>
+            <Logo src='./assets/logo_1.png' alt='Cardi tattoo' />
+        </Link>
         <Info>Studio tatuażu Wrocław <br /> Cardi Tattoo Shop</Info>
         <Info>Adres: <br /> {ADDRESS[0]} <br /> {ADDRESS[1]}</Info>
         <Info>Kontakt: <br /> tel: +48 796 787 653 <br /> email: carditattooshop@gmail.com</Info>
@@ -31,7 +35,15 @@ const FooterContainer = styled.footer`
     align-items: center;
     box-shadow: 0 -3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     position: relative;
-    height: ${({ theme }) => theme.footerHeight}px;
+    height: ${({ theme }) => theme.mobileFooterHeight}px;
+    flex-direction: column;
+    font-size: 14px;
+    
+    @media ${device.tablet} {
+        height: ${({ theme }) => theme.footerHeight}px;
+        flex-direction: row;
+        font-size: 16px;
+    }
 `;
 
 const Logo = styled(StyledLogo)`

@@ -7,5 +7,6 @@ export const theme = {
     transition: '.25s',
 
     sidePageNavbarHeight: 70,
-    footerHeight: 120
+    footerHeight: 120,
+    mobileFooterHeight: 300
 };

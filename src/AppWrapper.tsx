@@ -9,6 +9,7 @@ import { SidePageNavbar, StickyNavbar } from './components/Navbar';
 import Footer from './components/Footer';
 import { ScrollToTop } from './utils/scroll';
 import Routes from './components/Routes';
+import MobileNavbar from './components/Navbar/Mobile';
 
 const AppWrapper = () => (
     <ThemeProvider theme={theme}>
@@ -16,6 +17,7 @@ const AppWrapper = () => (
             <Router>
                 <ScrollToTop />
                 <Wrapper>
+                    <MobileNavbar />
                     <SidePageNavbar />
                     <StickyNavbar />
                     <Routes />

@@ -61,7 +61,7 @@ const Items: React.FC<Props> = ({ activeTab }) => {
             </ListItem>
         </ul>
     );
-}
+};
 
 const ListItem = styled.li`
     display: flex;

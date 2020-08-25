@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { device } from '../../utils/device';
+
 const SidePageHeader: React.FC = ({ children }) => (
     <Header>
         {children}
@@ -12,9 +14,14 @@ export const Header = styled.h2`
     background-image: url("./assets/texture.png");
     color: ${({ theme }) => theme.mainColor};
     margin: 0;
-    padding: 35px;
-    font-size: 60px;
+    font-size: 48px;
+    padding: 20px;
     box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+    @media ${device.tablet} {
+        padding: 35px;
+        font-size: 60px;
+    }
 `;
 
 export default SidePageHeader;

@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 
 import { anchorButtonStyles } from '../styledComponents/AnchorButton';
 import { StyledSection, SectionHeader } from '../styledComponents';
+import { device } from '../../utils/device';
 
 const showSendingResult = (result: boolean | null) => {
     if (result !== null) {
@@ -48,7 +49,7 @@ const Form = () => {
     return (
         <Section id='kontakt'>
             <SectionHeader>
-                Zapisz się na termin już dziś!
+                Zapisz się na termin!
             </SectionHeader>
             <FormContainer onSubmit={handleSubmit(onSubmit)}>
                 <Input placeholder="Imię...*" name="name" ref={register({ required: true })} />
@@ -89,8 +90,12 @@ const Section = styled(StyledSection)`
 const FormContainer = styled.form`
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 100%;
     margin-top: 20px;
+    
+    @media ${device.tablet} {
+        width: 600px;
+    }
 `;
 
 const Input = styled.input`

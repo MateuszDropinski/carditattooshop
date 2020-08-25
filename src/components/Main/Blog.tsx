@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { StyledSection, SectionHeader, StyledLinkButton } from '../styledComponents';
 import Post from '../Post';
 import { BLOG } from '../../content/blog';
+import { device } from '../../utils/device';
 
 const Blog = () => (
     <StyledSection>
@@ -24,6 +25,13 @@ const Posts = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+    @media ${device.tablet} {
+        margin: 0;
+        flex-direction: row;
+    }
 `;
 
 export default Blog;

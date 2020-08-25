@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Items from './Items';
+import { device } from '../../utils/device';
 
 const StaticNavbar = () => (
     <Navbar>
@@ -12,6 +13,11 @@ const StaticNavbar = () => (
 const Navbar = styled.nav`
     width: 700px;
     margin: auto;
+    display: none;
+    
+    @media ${device.tablet} {
+        display: block;
+    }
     
     ul {
         display: flex;
