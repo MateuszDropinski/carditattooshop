@@ -31,19 +31,24 @@ const Section = styled(StyledSection)`
     flex-direction: column; 
     align-items: center;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         flex-direction: row;
     }
 `;
 
 const ImageRow = styled.img`
     display: none;
-    width: 33%;
     height: auto;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: block;
+        width: 40%;
+    }
+    
+    @media ${device.desktop} {
+        display: block;
+        width: 33%;
     }
 `;
 
@@ -54,7 +59,7 @@ const ImageColumn = styled.img`
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     margin-bottom: 20px;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: none;
     }
 `;
@@ -83,7 +88,7 @@ const TextContainer = styled.div`
     align-items: flex-start;
     justify-content: space-between;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         width: 50%;
         padding: 20px 0;
     }

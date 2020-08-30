@@ -57,7 +57,7 @@ const AppContent = styled.div`
         return `calc(100vh - ${heightToRemove}px)`;
     }};
     
-    @media ${device.tablet} {
+    @media ${device.desktop} {
         min-height: ${({ theme }) => {
         const heightToRemove = theme.footerHeight + theme.sidePageNavbarHeight;
         return `calc(100vh - ${heightToRemove}px)`;

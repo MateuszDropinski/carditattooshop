@@ -57,7 +57,7 @@ const Info = styled.p`
     text-align: left;
     border: 1px solid ${({ theme }) => theme.mainColor};
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: block;  
     }
 `;
@@ -71,16 +71,26 @@ const Wrapper = styled.figure`
     transition: ${({ theme }) => theme.transition};
     overflow: hidden;
     
-    @media ${device.tablet} {
+    @media ${device.mobileL} {
+        width: 40%;   
+        margin: 5%;    
+    }
+    
+    @media ${device.laptop} {
+        width: 35%;   
+        margin: 5% 7.5%;    
+    }
+    
+    @media ${device.desktop} {
         width: 20%;   
-        margin: 0 2.5%;    
+        margin: 2.5%;    
     }
     
     &:hover {
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         &:hover ${Caption} {
             transform: translateY(100%);
         }
@@ -114,7 +124,7 @@ const AnchorMobile = styled(StyledAnchor)`
     font-size: 14px;
     margin-top: 5px;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: none; 
     }    
 `;

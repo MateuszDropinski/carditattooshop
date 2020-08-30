@@ -9,9 +9,7 @@ const StyledLogo = styled.img`
     width: 50px;
     height: auto;
     
-    @media ${device.tablet} {
-        top: 30px;
-        left: 50px;
+    @media ${device.mobileL} {
         width: 60px;    
     }
 `;

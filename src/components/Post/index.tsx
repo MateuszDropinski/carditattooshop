@@ -33,7 +33,7 @@ const Wrapper = styled.figure`
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     margin: 0 0 30px 0;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         width: 40%;
         margin: 3%;
     }
@@ -58,7 +58,7 @@ const Caption = styled.figcaption`
     border: 1px solid ${({ theme }) => theme.mainColor};
     padding: 15px;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         padding: 20px;
     }
 `;
@@ -69,7 +69,7 @@ const Header = styled.h3`
     border-bottom: 2px solid ${({ theme }) => theme.mainColor};
     margin-top: 0;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         font-size: 26px;
     }
 `;
@@ -80,7 +80,7 @@ const Text = styled.p`
     text-align: left;
     font-size: 14px;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         margin-bottom: 15px;
         font-size: 16px;
     }
@@ -91,7 +91,7 @@ const Date = styled.p`
     margin-bottom: 15px;
     font-size: 14px;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         margin-bottom: 25px;
     }
 `;

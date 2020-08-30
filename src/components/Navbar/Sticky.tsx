@@ -62,7 +62,7 @@ const Navbar = styled.nav`
     transition: ${({ theme }) => theme.transition};
     transform: translateY(-120%);
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: flex;
     }
     
@@ -80,6 +80,7 @@ const Navbar = styled.nav`
         a {
             color: ${({ theme }) => theme.white};
             font-size: 20px;
+            text-decoration: none;
             
             &:hover {
                 color: ${({ theme }) => theme.mainColor};            

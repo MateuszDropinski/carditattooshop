@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 import Items from './Items';
@@ -9,11 +9,17 @@ import { StyledLogo } from '../styledComponents';
 
 const MobileNavbar = () => {
     const [open, setOpen] = useState(false);
-    const { pathname } = useLocation();
+    const { listen } = useHistory();
 
     useEffect(() => {
-        setOpen(false);
-    }, [pathname]);
+        const unlisten = listen(() => {
+            setOpen(false);
+        });
+
+        return () => {
+            unlisten();
+        };
+    }, [listen]);
 
     return (
         <>
@@ -45,7 +51,7 @@ const Navbar = styled.nav<{ open: boolean }>`
     padding-top: 50px;
     overflow: hidden;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: none;
     }
     
@@ -59,17 +65,21 @@ const Navbar = styled.nav<{ open: boolean }>`
     li {
         text-shadow: 1px 1px 2px ${({ theme }) => theme.black};
         padding-bottom: 15px;
+        
+        a {
+            text-decoration: none;
+        }
     }
 `;
 
 const Burger = styled.button<{ open: boolean }>`
-    position: absolute;
+    position: ${({ open }) => open ? 'fixed' : 'absolute'};
     top: 34px;
     right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 2rem;
+    width: 35px;
     height: 35px;
     background: transparent;
     border: none;
@@ -77,7 +87,12 @@ const Burger = styled.button<{ open: boolean }>`
     padding: 0;
     z-index: 10;
     
-    @media ${device.tablet} {
+    @media ${device.mobileL} {
+        height: 50px;
+        width: 50px;
+    }
+    
+    @media ${device.laptop} {
         display: none;
     }
     
@@ -87,13 +102,18 @@ const Burger = styled.button<{ open: boolean }>`
     
     div {
         width: 35px;
-        height: 0.25rem;
+        height: 4px;
         background: ${({ theme }) => theme.black};
         border-radius: 10px;
         border: 1px solid ${({ theme }) => theme.mainColor};
         transition: all 0.3s linear;
         position: relative;
         transform-origin: 1px;
+        
+        @media ${device.mobileL} {
+            height: 6px;
+            width: 50px;
+        }
 
         :first-child {
             transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import styled from 'styled-components';
 
 import { BLOG } from '../../content/blog';
 import PostHeader from './PostHeader';
@@ -29,15 +30,21 @@ const PostPage = () => {
     }
 
     return (
-        <div>
+        <Wrapper>
             <PostHeader date={post.date} author={post.author.title}>
                 {post.title}
             </PostHeader>
             <StyledSectionWithPadding>
                 {post.content.map(getPostSection)}
             </StyledSectionWithPadding>
-        </div>
+        </Wrapper>
     );
 };
+
+const Wrapper = styled.div`
+    section:last-child {
+        margin-bottom: 0;
+    }
+`;
 
 export default PostPage;

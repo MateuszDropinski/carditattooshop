@@ -15,7 +15,7 @@ const Navbar = styled.nav`
     margin: auto;
     display: none;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: block;
     }
     
@@ -26,6 +26,10 @@ const Navbar = styled.nav`
     
     li {
         text-shadow: 1px 1px 2px ${({ theme }) => theme.black};
+        
+        a {
+            text-decoration: none;
+        }
     }
 `;
 

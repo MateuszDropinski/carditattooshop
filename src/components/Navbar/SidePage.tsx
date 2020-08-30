@@ -41,16 +41,24 @@ const Mobile = styled.div`
     position: relative;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: none;
     }
     
-    button {
+    button {        
         top: 18px;
+        
+        @media ${device.tablet} {
+            top: 12px;
+        }
     }
     
-    img {
-        top: 19px;
+    &>a {
+        top: 38px;
+        
+        @media ${device.mobileL} {
+            top: 40px;
+        }
     }
 `;
 
@@ -64,7 +72,7 @@ const Navbar = styled.nav`
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     display: none;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: flex;
     }
     
@@ -75,6 +83,10 @@ const Navbar = styled.nav`
         
         li {
             align-items: center;
+            
+            a {
+                text-decoration: none;
+            }
         }
                
         li.active-tab {
@@ -92,7 +104,7 @@ const LogoContainer = styled(Link)`
     transform: translateY(-50%);
     position: absolute;
     
-    @media ${device.tablet} {
+    @media ${device.desktop} {
         left: 50px;
     }
 `;

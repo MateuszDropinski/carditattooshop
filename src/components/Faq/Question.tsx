@@ -51,8 +51,9 @@ const StyledQuestion = styled.p`
     display: flex;
     align-items: center;
     padding: 10px 5px 5px;
+    text-align: left;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         font-size: 22px;  
         padding: 20px 10px 10px;
     }
@@ -78,7 +79,7 @@ const StyledAnswer = styled.p`
     color: ${({ theme }) => theme.text};
     text-align: left;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         font-size: 18px;
         margin-bottom: 10px;
         padding: 0 45px;

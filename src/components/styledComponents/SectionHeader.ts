@@ -8,7 +8,7 @@ const SectionHeader = styled.h2`
     padding-bottom: 5px;
     border-bottom: 3px solid ${({ theme }) => theme.mainColor};
     
-    @media ${device.tablet} {
+    @media ${device.desktop} {
         margin: 0 0 40px 0;
         font-size: 32px;
     }

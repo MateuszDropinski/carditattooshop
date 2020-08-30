@@ -32,7 +32,7 @@ const SingleRegulation = styled.p`
     font-size: 14px;
     margin: 10px 0;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         margin: 5px 0;
         font-size: 18px;        
     }
@@ -43,9 +43,9 @@ const Title = styled.h5`
     font-size: 20px;
     margin: 0 0 15px 0;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         font-size: 24px;    
-        margin-bottom: 0 0 30px 0;
+        margin: 0 0 30px 0;
     }
 `;
 

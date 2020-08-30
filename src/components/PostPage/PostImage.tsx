@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { StyledSection } from '../styledComponents';
 import { device } from '../../utils/device';
 
 type Props = {
@@ -16,10 +15,10 @@ const PostImage: React.FC<Props> = ({ src, alt, vertical = false }) => (
     </Section>
 );
 
-const Section = styled(StyledSection)`
+const Section = styled.section`
     margin-bottom: 40px;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         margin-bottom: 80px;
     }
 `;
@@ -29,7 +28,7 @@ const Image = styled.img<{ vertical: boolean }>`
     box-shadow: 0 -3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);   
     width: ${({ vertical }) => vertical ? '66%' : '100%'}};
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         width: ${({ vertical }) => vertical ? '33%' : '66%'};
     }
 `;

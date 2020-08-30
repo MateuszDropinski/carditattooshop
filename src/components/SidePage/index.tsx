@@ -55,7 +55,7 @@ const Section = styled(StyledSectionWithPadding)`
     color: ${({ theme }) => theme.text};
     margin-bottom: 0;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         font-size: 20px;        
     }
 `;
@@ -66,7 +66,7 @@ const Content = styled.div`
     flex-direction: column;
     align-items: center;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         display: block;
     }
 `;
@@ -76,7 +76,7 @@ const Image = styled.img`
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     margin: 0 0 20px 0;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         margin: 0 45px 40px 0;  
         float: left;    
     }
@@ -94,7 +94,7 @@ const Gallery = styled.div`
         margin: 40px 0 20px 0;
         border-bottom: 2px solid ${({ theme }) => theme.mainColor};
         
-        @media ${device.tablet} {
+        @media ${device.laptop} {
             margin: 70px 0 50px 0;    
         }
     }
@@ -106,7 +106,7 @@ const Images = styled.div`
     grid-gap: 0 5%;
     align-items: center;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         grid-template-columns: 16% 16% 16% 16% 16%;
     }
    
@@ -118,7 +118,7 @@ const Images = styled.div`
         transition: ${({ theme }) => theme.transition};
         margin-bottom: 20%;
         
-        @media ${device.tablet} {
+        @media ${device.laptop} {
             margin-bottom: 30%;
         }
         

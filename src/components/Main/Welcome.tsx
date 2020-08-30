@@ -29,7 +29,11 @@ const Welcome = () => (
 );
 
 const Logo = styled(StyledLogo)`
-    @media ${device.tablet} {
+    @media ${device.mobileL} {
+        width: 75px;
+    }
+    
+    @media ${device.desktop} {
         width: 100px;
     }
 `;
@@ -47,8 +51,12 @@ const Wrapper = styled.section`
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     margin-bottom: 30px;
     
-    @media ${device.tablet} {
+    @media ${device.mobileL} {
         margin-bottom: 50px;
+    }
+    
+    @media ${device.laptop} {
+        margin-bottom: 80px;
     }
 `;
 
@@ -66,7 +74,19 @@ const Header = styled.h1`
     white-space: nowrap;
     text-shadow: 1px 1px 2px ${({ theme }) => theme.black};
     
-    @media ${device.tablet} {
+    @media ${device.mobileL} {
+        font-size: 58px;
+        border-bottom-width: 6px;
+        letter-spacing: 4px;
+    }
+    
+    @media ${device.laptop} {
+        font-size: 72px;
+        border-bottom-width: 8px;
+        letter-spacing: 5px;
+    }
+    
+    @media ${device.desktop} {
         font-size: 100px;
         border-bottom-width: 10px;
         letter-spacing: 3px;
@@ -85,8 +105,17 @@ const ButtonsContainer = styled.div`
     transform: translate(-50%, -200%);
     color: ${({ theme }) => theme.white};
     
-    @media ${device.tablet} {
+    @media ${device.mobileL} {
+        font-size: 18px;
+        width: 300px;
         justify-content: space-between;
+    }
+    
+    @media ${device.laptop} {
+        width: 450px;
+    }
+    
+    @media ${device.desktop} {
         width: 550px;
         font-size: 20px;
     }
@@ -116,17 +145,28 @@ const ArrowDownContainer = styled.div`
     align-items: flex-start;
     animation: ${bouncingArrow(2, 10)} 1s linear infinite;
     
+    @media ${device.mobileL} {
+        width: 20px;
+        height: 35px;
+        animation: ${bouncingArrow(2, 15)} 1s linear infinite;
+        border-width: 2px;
+    }
+    
     @media ${device.tablet} {
         width: 30px;
         height: 50px;
         animation: ${bouncingArrow(2, 20)} 1s linear infinite;
-        border-width: 2px;
     }
     
     svg {
         width: 10px;
         height: 10px;
         stroke: ${({ theme }) => theme.white};
+        
+        @media ${device.mobileL} {
+            width: 16px;
+            height: 16px;
+        }
         
         @media ${device.tablet} {
             width: 24px;
@@ -137,6 +177,10 @@ const ArrowDownContainer = styled.div`
 
 const Button = styled(StyledLinkButton)`
     width: 100px;
+    
+    @media ${device.mobileL} {
+        width: 136px;
+    }
     
     @media ${device.tablet} {
         width: 172px;

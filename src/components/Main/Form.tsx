@@ -93,7 +93,7 @@ const FormContainer = styled.form`
     width: 100%;
     margin-top: 20px;
     
-    @media ${device.tablet} {
+    @media ${device.desktop} {
         width: 600px;
     }
 `;

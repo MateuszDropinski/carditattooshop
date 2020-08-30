@@ -27,7 +27,7 @@ const Posts = styled.div`
     justify-content: space-around;
     flex-direction: column;
     
-    @media ${device.tablet} {
+    @media ${device.laptop} {
         margin: 0;
         flex-direction: row;
     }

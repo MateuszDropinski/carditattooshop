@@ -52,11 +52,16 @@ const Parallax = styled.div`
     width: 100%;
     position: relative;
     height: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     background-size: cover;
     background-image: url("/assets/background_2.jpg");
     
-    @media ${device.tablet} {
+    @media ${device.mobileL} {
+        margin-bottom: 80px;   
+        height: 300px;
+    }
+    
+    @media ${device.laptop} {
         height: 400px;     
         margin-bottom: 100px;   
     }
@@ -81,6 +86,10 @@ const Question = styled.p`
     color: ${({ theme }) => theme.mainColor};
     
     @media ${device.tablet} {
+        font-size: 24px;
+    }
+    
+    @media ${device.laptop} {
         font-size: 32px;
     }
 `;
@@ -91,6 +100,11 @@ const Answer = styled.p`
     margin-top: 20px;
     
     @media ${device.tablet} {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    
+    @media ${device.laptop} {
         font-size: 20px;
         margin-top: 40px;
     }

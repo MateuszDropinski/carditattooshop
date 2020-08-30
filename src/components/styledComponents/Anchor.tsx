@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { device } from '../../utils/device';
 
 export const anchorStyles = css`
-    text-decoration: none;
     color: ${({ theme }) => theme.white};
     transition: ${({ theme }) => theme.transition};
     cursor: pointer;
@@ -13,7 +12,11 @@ export const anchorStyles = css`
     justify-content: center;
     align-items: center;
     
-    @media ${device.tablet} {
+    @media ${device.mobileL} {
+        font-size: 18px;
+    }
+    
+    @media ${device.laptop} {
         font-size: 20px;
     }
     
