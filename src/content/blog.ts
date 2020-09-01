@@ -11,7 +11,7 @@ export const BLOG: PostType[] = [
             + 'jednakże nie jest to początek naszej przygody z tatuażem...',
         author: ARTISTS[0],
         image: {
-            src: '/assets/post_1.jpg',
+            src: './assets/post_1.jpg',
             alt: 'post 1'
         },
         date: '15.07.2020',
@@ -45,7 +45,7 @@ export const BLOG: PostType[] = [
             {
                 type: PostContentType.Image,
                 payload: {
-                    src: '/assets/post_1.jpg',
+                    src: './assets/post_1.jpg',
                     alt: 'post 1'
                 }
             }
@@ -58,7 +58,7 @@ export const BLOG: PostType[] = [
             + 'jednakże nie jest to początek naszej przygody z tatuażem...',
         author: ARTISTS[0],
         image: {
-            src: '/assets/post_2.jpg',
+            src: './assets/post_2.jpg',
             alt: 'post 2'
         },
         date: '14.07.2020',
@@ -95,7 +95,7 @@ export const BLOG: PostType[] = [
             + 'jednakże nie jest to początek naszej przygody z tatuażem...',
         author: ARTISTS[0],
         image: {
-            src: '/assets/post_1.jpg',
+            src: './assets/post_1.jpg',
             alt: 'post 1'
         },
         date: '15.07.2020',
@@ -132,7 +132,7 @@ export const BLOG: PostType[] = [
             + 'jednakże nie jest to początek naszej przygody z tatuażem...',
         author: ARTISTS[0],
         image: {
-            src: '/assets/post_2.jpg',
+            src: './assets/post_2.jpg',
             alt: 'post 2'
         },
         date: '14.07.2020',

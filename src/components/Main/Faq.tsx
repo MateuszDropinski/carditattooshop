@@ -54,7 +54,7 @@ const Parallax = styled.div`
     height: 200px;
     margin-bottom: 60px;
     background-size: cover;
-    background-image: url("/assets/background_2.jpg");
+    background-image: url("./assets/background_2.jpg");
     
     @media ${device.mobileL} {
         margin-bottom: 80px;   
