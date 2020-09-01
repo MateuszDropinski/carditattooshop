@@ -18,13 +18,13 @@ const SidePageNavbar = () => {
             <>
                 <Navbar>
                     <LogoContainer to='/'>
-                        <Logo src='/assets/logo_1.png' alt='Cardi tattoo' />
+                        <Logo src='./assets/logo_1.png' alt='Cardi tattoo' />
                     </LogoContainer>
                     <Items activeTab={activeRoute} />
                 </Navbar>
                 <Mobile>
                     <LogoContainer to='/'>
-                        <Logo src='/assets/logo_1.png' alt='Cardi tattoo' />
+                        <Logo src='./assets/logo_1.png' alt='Cardi tattoo' />
                     </LogoContainer>
                     <MobileNavbar />
                 </Mobile>

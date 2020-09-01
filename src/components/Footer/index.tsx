@@ -10,7 +10,7 @@ import { device } from '../../utils/device';
 const Footer = () => (
     <FooterContainer>
         <Link to='/'>
-            <Logo src='/assets/logo_1.png' alt='Cardi tattoo' />
+            <Logo src='./assets/logo_1.png' alt='Cardi tattoo' />
         </Link>
         <Info>Studio tatuażu Wrocław <br /> Cardi Tattoo Shop</Info>
         <Info>Adres: <br /> {ADDRESS[0]} <br /> {ADDRESS[1]}</Info>

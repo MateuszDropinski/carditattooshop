@@ -41,7 +41,7 @@ const StickyNavbar = () => {
     return (
         <Navbar className={navbarClassname}>
             <Link to='/'>
-                <Logo src='/assets/logo_1.png' alt='Cardi Tattoo Shop' />
+                <Logo src='./assets/logo_1.png' alt='Cardi Tattoo Shop' />
             </Link>
             <Items activeTab={activeRoute} />
         </Navbar>

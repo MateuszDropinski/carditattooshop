@@ -24,11 +24,11 @@ export const ABOUT: SidePageContentType = {
         + 'Ut finibus consequat bibendum. Maecenas mauris quam, fringilla eu viverra ac, eleifend quis dui. '
         + 'Nullam tellus mi, blandit a metus vel, gravida cursus tortor.',
     images: [
-        { src: '/assets/about_1.jpg', alt: 'Studio' },
-        { src: '/assets/about_2.jpg', alt: 'Studio' },
-        { src: '/assets/about_3.jpg', alt: 'Studio' },
-        { src: '/assets/about_3.jpg', alt: 'Studio' },
-        { src: '/assets/about_3.jpg', alt: 'Studio' },
-        { src: '/assets/about_3.jpg', alt: 'Studio' }
+        { src: './assets/about_1.jpg', alt: 'Studio' },
+        { src: './assets/about_2.jpg', alt: 'Studio' },
+        { src: './assets/about_3.jpg', alt: 'Studio' },
+        { src: './assets/about_3.jpg', alt: 'Studio' },
+        { src: './assets/about_3.jpg', alt: 'Studio' },
+        { src: './assets/about_3.jpg', alt: 'Studio' }
     ]
 };
