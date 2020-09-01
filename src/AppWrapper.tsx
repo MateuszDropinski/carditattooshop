@@ -13,7 +13,7 @@ import Routes from './components/Routes';
 const AppWrapper = () => (
     <ThemeProvider theme={theme}>
         <SimpleReactLightbox>
-            <Router basename='/'>
+            <Router basename='/carditattooshop/build'>
                 <ScrollToTop />
                 <Wrapper>
                     <SidePageNavbar />
