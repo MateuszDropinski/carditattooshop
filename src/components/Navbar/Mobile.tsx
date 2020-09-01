@@ -30,7 +30,7 @@ const MobileNavbar = () => {
             </Burger>
             <Navbar open={open}>
                 <Link to='/'>
-                    <StyledLogo src='./assets/logo_1.png' alt='Cardi Tattoo Shop' />
+                    <StyledLogo src='https://mateuszdropinski.github.io/carditattooshop/build/assets/logo_1.png' alt='Cardi Tattoo Shop' />
                 </Link>
                 <Items />
             </Navbar>

@@ -5,7 +5,7 @@ export const ARTISTS: ArtistContentType[] = [
         title: 'Paweł Kowalczyk',
         alias: 'Cardi',
         images: [
-            { src: './assets/CARDI.jpg', alt: 'Cardi', vertical: true }
+            { src: 'https://mateuszdropinski.github.io/carditattooshop/build/assets/CARDI.jpg', alt: 'Cardi', vertical: true }
         ],
         textShortcut: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut '
             + 'labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
@@ -35,7 +35,7 @@ export const ARTISTS: ArtistContentType[] = [
         title: 'Aleksandra Kowalczyk',
         alias: 'Mancza',
         images: [
-            { src: './assets/MANCZA.jpg', alt: 'Mancza', vertical: true }
+            { src: 'https://mateuszdropinski.github.io/carditattooshop/build/assets/MANCZA.jpg', alt: 'Mancza', vertical: true }
         ],
         textShortcut: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut '
             + 'labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi'
