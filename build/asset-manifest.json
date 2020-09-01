@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./carditattooshop/build/static/css/main.bb602a2e.chunk.css",
-    "main.js": "./carditattooshop/build/static/js/main.fcbc8cdc.chunk.js",
-    "main.js.map": "./carditattooshop/build/static/js/main.fcbc8cdc.chunk.js.map",
-    "runtime-main.js": "./carditattooshop/build/static/js/runtime-main.fc594e3d.js",
-    "runtime-main.js.map": "./carditattooshop/build/static/js/runtime-main.fc594e3d.js.map",
-    "static/js/2.1e16fad5.chunk.js": "./carditattooshop/build/static/js/2.1e16fad5.chunk.js",
-    "static/js/2.1e16fad5.chunk.js.map": "./carditattooshop/build/static/js/2.1e16fad5.chunk.js.map",
-    "index.html": "./carditattooshop/build/index.html",
-    "precache-manifest.8189080f24897424509ea0602f3dceeb.js": "./carditattooshop/build/precache-manifest.8189080f24897424509ea0602f3dceeb.js",
-    "service-worker.js": "./carditattooshop/build/service-worker.js",
-    "static/css/main.bb602a2e.chunk.css.map": "./carditattooshop/build/static/css/main.bb602a2e.chunk.css.map",
-    "static/js/2.1e16fad5.chunk.js.LICENSE.txt": "./carditattooshop/build/static/js/2.1e16fad5.chunk.js.LICENSE.txt"
+    "main.css": "/carditattooshop/build/static/css/main.bb602a2e.chunk.css",
+    "main.js": "/carditattooshop/build/static/js/main.fcbc8cdc.chunk.js",
+    "main.js.map": "/carditattooshop/build/static/js/main.fcbc8cdc.chunk.js.map",
+    "runtime-main.js": "/carditattooshop/build/static/js/runtime-main.a9e2062f.js",
+    "runtime-main.js.map": "/carditattooshop/build/static/js/runtime-main.a9e2062f.js.map",
+    "static/js/2.eea55d33.chunk.js": "/carditattooshop/build/static/js/2.eea55d33.chunk.js",
+    "static/js/2.eea55d33.chunk.js.map": "/carditattooshop/build/static/js/2.eea55d33.chunk.js.map",
+    "index.html": "/carditattooshop/build/index.html",
+    "precache-manifest.8bcfe4ff91ab32565ecd6063e58670fa.js": "/carditattooshop/build/precache-manifest.8bcfe4ff91ab32565ecd6063e58670fa.js",
+    "service-worker.js": "/carditattooshop/build/service-worker.js",
+    "static/css/main.bb602a2e.chunk.css.map": "/carditattooshop/build/static/css/main.bb602a2e.chunk.css.map",
+    "static/js/2.eea55d33.chunk.js.LICENSE.txt": "/carditattooshop/build/static/js/2.eea55d33.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fc594e3d.js",
-    "static/js/2.1e16fad5.chunk.js",
+    "static/js/runtime-main.a9e2062f.js",
+    "static/js/2.eea55d33.chunk.js",
     "static/css/main.bb602a2e.chunk.css",
     "static/js/main.fcbc8cdc.chunk.js"
   ]
