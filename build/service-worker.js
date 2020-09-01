@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/carditattooshop/build/precache-manifest.0cac6ad36699c5569b8c838dc0987e57.js"
+  "/carditattooshop/build/precache-manifest.9dbf9c1af3d15cf902d011c88093ccd3.js"
 );
 
 self.addEventListener('message', (event) => {

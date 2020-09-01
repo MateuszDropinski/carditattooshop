@@ -21,7 +21,7 @@ const Map = () => {
     // TODO: Remove 'REMOVE' from key
 
     return (
-        <LoadScript googleMapsApiKey="AIzaSyAbo63hPprI88UFlecWmYk6OVWeBi3jTFYREMOVE">
+        <LoadScript googleMapsApiKey="AIzaSyAbo63hPprI88UFlecWmYk6OVWeBi3jTFY">
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}

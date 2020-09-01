@@ -44,7 +44,7 @@ const Wrapper = styled.section`
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     min-height: 270px;
     position: relative;
     padding-top: 50px;
@@ -53,10 +53,18 @@ const Wrapper = styled.section`
     
     @media ${device.mobileL} {
         margin-bottom: 50px;
+        min-height: 350px;
+    }
+    
+    @media ${device.tablet} {
+        margin-bottom: 50px;
+        min-height: 400px;
     }
     
     @media ${device.laptop} {
         margin-bottom: 80px;
+        min-height: 500px;
+        height: 100vh;
     }
 `;
 
