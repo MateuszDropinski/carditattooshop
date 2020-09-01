@@ -9,7 +9,7 @@ import { device } from '../../utils/device';
 
 const Welcome = () => (
     <Wrapper>
-        <Logo src='./assets/logo_1.png' alt='Cardi Tattoo Shop' />
+        <Logo src='/assets/logo_1.png' alt='Cardi Tattoo Shop' />
         <StaticNavbar />
         <MobileNavbar />
         <Header>Cardi Tattoo Shop</Header>
@@ -40,7 +40,7 @@ const Logo = styled(StyledLogo)`
 
 const Wrapper = styled.section`
     background-color: ${({ theme }) => theme.black};
-    background-image: url('./assets/background_1.jpg');
+    background-image: url('/assets/background_1.jpg');
     background-size: cover;
     background-position: center center;
     width: 100%;
