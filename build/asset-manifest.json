@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.bb602a2e.chunk.css",
-    "main.js": "./static/js/main.7a7b43bd.chunk.js",
-    "main.js.map": "./static/js/main.7a7b43bd.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.cb1b20ce.js",
-    "runtime-main.js.map": "./static/js/runtime-main.cb1b20ce.js.map",
-    "static/js/2.1c59fe5a.chunk.js": "./static/js/2.1c59fe5a.chunk.js",
-    "static/js/2.1c59fe5a.chunk.js.map": "./static/js/2.1c59fe5a.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.0a94f32b5f16c4ad9f32174ac10d7eca.js": "./precache-manifest.0a94f32b5f16c4ad9f32174ac10d7eca.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.bb602a2e.chunk.css.map": "./static/css/main.bb602a2e.chunk.css.map",
-    "static/js/2.1c59fe5a.chunk.js.LICENSE.txt": "./static/js/2.1c59fe5a.chunk.js.LICENSE.txt"
+    "main.css": "/carditattooshop/build/static/css/main.bb602a2e.chunk.css",
+    "main.js": "/carditattooshop/build/static/js/main.7a7b43bd.chunk.js",
+    "main.js.map": "/carditattooshop/build/static/js/main.7a7b43bd.chunk.js.map",
+    "runtime-main.js": "/carditattooshop/build/static/js/runtime-main.a9e2062f.js",
+    "runtime-main.js.map": "/carditattooshop/build/static/js/runtime-main.a9e2062f.js.map",
+    "static/js/2.eea55d33.chunk.js": "/carditattooshop/build/static/js/2.eea55d33.chunk.js",
+    "static/js/2.eea55d33.chunk.js.map": "/carditattooshop/build/static/js/2.eea55d33.chunk.js.map",
+    "index.html": "/carditattooshop/build/index.html",
+    "precache-manifest.aaece73b0f9ab9eebd0d2737aaea787a.js": "/carditattooshop/build/precache-manifest.aaece73b0f9ab9eebd0d2737aaea787a.js",
+    "service-worker.js": "/carditattooshop/build/service-worker.js",
+    "static/css/main.bb602a2e.chunk.css.map": "/carditattooshop/build/static/css/main.bb602a2e.chunk.css.map",
+    "static/js/2.eea55d33.chunk.js.LICENSE.txt": "/carditattooshop/build/static/js/2.eea55d33.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cb1b20ce.js",
-    "static/js/2.1c59fe5a.chunk.js",
+    "static/js/runtime-main.a9e2062f.js",
+    "static/js/2.eea55d33.chunk.js",
     "static/css/main.bb602a2e.chunk.css",
     "static/js/main.7a7b43bd.chunk.js"
   ]

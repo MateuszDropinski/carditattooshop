@@ -2,7 +2,7 @@
   "name": "carditattoo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://mateuszdropinski.github.io/carditattooshop/build",
   "dependencies": {
     "@react-google-maps/api": "^1.9.8",
     "@synergycodes/eslint-config": "^1.0.1",
