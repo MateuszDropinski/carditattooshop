@@ -82,8 +82,8 @@ const Wrapper = styled.figure`
     }
     
     @media ${device.desktop} {
-        width: 20%;   
-        margin: 2.5%;    
+        width: 30%;   
+        margin: 5% 10%;    
     }
     
     &:hover {
