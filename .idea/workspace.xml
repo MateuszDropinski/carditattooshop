@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cba7ce8-15c8-49f7-bd6c-81c54dc3f92b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build/precache-manifest.928d8bdfd22742132559d115bca97e60.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/2.1c59fe5a.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/runtime-main.cb1b20ce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/runtime-main.cb1b20ce.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.8bcfe4ff91ab32565ecd6063e58670fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.eea55d33.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.eea55d33.chunk.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/2.1c59fe5a.chunk.js.LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.eea55d33.chunk.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/2.1c59fe5a.chunk.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.a9e2062f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.a9e2062f.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +117,7 @@
       <workItem from="1598373950077" duration="5296000" />
       <workItem from="1598379400754" duration="3148000" />
       <workItem from="1598800443174" duration="7623000" />
-      <workItem from="1598978084971" duration="1020000" />
+      <workItem from="1598978084971" duration="1318000" />
     </task>
     <servers />
   </component>
@@ -128,22 +141,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597857057552" />
-    <state width="1515" height="181" key="GridCell.Tab.0.bottom" timestamp="1598979060873">
+    <state width="1515" height="181" key="GridCell.Tab.0.bottom" timestamp="1598979121072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="181" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598979060873" />
-    <state width="1515" height="181" key="GridCell.Tab.0.center" timestamp="1598979060872">
+    <state width="1515" height="181" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598979121072" />
+    <state width="1515" height="181" key="GridCell.Tab.0.center" timestamp="1598979121072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="181" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598979060872" />
-    <state width="1515" height="181" key="GridCell.Tab.0.left" timestamp="1598979060872">
+    <state width="1515" height="181" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598979121072" />
+    <state width="1515" height="181" key="GridCell.Tab.0.left" timestamp="1598979121072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="181" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598979060872" />
-    <state width="1515" height="181" key="GridCell.Tab.0.right" timestamp="1598979060873">
+    <state width="1515" height="181" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598979121072" />
+    <state width="1515" height="181" key="GridCell.Tab.0.right" timestamp="1598979121072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="181" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598979060873" />
+    <state width="1515" height="181" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598979121072" />
     <state x="277" y="57" width="1130" height="709" key="SettingsEditor" timestamp="1597766750458">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
