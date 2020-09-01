@@ -73,7 +73,7 @@ const Navbar = styled.nav<{ open: boolean }>`
 `;
 
 const Burger = styled.button<{ open: boolean }>`
-    position: fixed;y
+    position: ${({ open }) => open ? 'fixed' : 'absolute'};
     top: 34px;
     right: 30px;
     display: flex;
