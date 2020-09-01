@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b9f62095d52e5c9db9afd9977a39e7fc",
+    "revision": "52463956ba52bd8160811899cf968375",
     "url": "/carditattooshop/build/index.html"
   },
   {
-    "revision": "13a23e6040e95738b204",
+    "revision": "0265759d562e62cad5d9",
     "url": "/carditattooshop/build/static/css/main.bb602a2e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/carditattooshop/build/static/js/2.eea55d33.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "13a23e6040e95738b204",
-    "url": "/carditattooshop/build/static/js/main.6374ce30.chunk.js"
+    "revision": "0265759d562e62cad5d9",
+    "url": "/carditattooshop/build/static/js/main.1583fc13.chunk.js"
   },
   {
     "revision": "d8c234c67e72e1131766",

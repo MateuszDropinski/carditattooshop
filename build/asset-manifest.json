@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/carditattooshop/build/static/css/main.bb602a2e.chunk.css",
-    "main.js": "/carditattooshop/build/static/js/main.6374ce30.chunk.js",
-    "main.js.map": "/carditattooshop/build/static/js/main.6374ce30.chunk.js.map",
+    "main.js": "/carditattooshop/build/static/js/main.1583fc13.chunk.js",
+    "main.js.map": "/carditattooshop/build/static/js/main.1583fc13.chunk.js.map",
     "runtime-main.js": "/carditattooshop/build/static/js/runtime-main.a9e2062f.js",
     "runtime-main.js.map": "/carditattooshop/build/static/js/runtime-main.a9e2062f.js.map",
     "static/js/2.eea55d33.chunk.js": "/carditattooshop/build/static/js/2.eea55d33.chunk.js",
     "static/js/2.eea55d33.chunk.js.map": "/carditattooshop/build/static/js/2.eea55d33.chunk.js.map",
     "index.html": "/carditattooshop/build/index.html",
-    "precache-manifest.51d297741ab2746beff0defafa9baa20.js": "/carditattooshop/build/precache-manifest.51d297741ab2746beff0defafa9baa20.js",
+    "precache-manifest.16d942aa625541dc96f5a19c68d203f0.js": "/carditattooshop/build/precache-manifest.16d942aa625541dc96f5a19c68d203f0.js",
     "service-worker.js": "/carditattooshop/build/service-worker.js",
     "static/css/main.bb602a2e.chunk.css.map": "/carditattooshop/build/static/css/main.bb602a2e.chunk.css.map",
     "static/js/2.eea55d33.chunk.js.LICENSE.txt": "/carditattooshop/build/static/js/2.eea55d33.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a9e2062f.js",
     "static/js/2.eea55d33.chunk.js",
     "static/css/main.bb602a2e.chunk.css",
-    "static/js/main.6374ce30.chunk.js"
+    "static/js/main.1583fc13.chunk.js"
   ]
 }
